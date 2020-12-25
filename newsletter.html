@@ -20,6 +20,15 @@
                 background-color: transparent;
                 text-decoration: underline;
             }
+            .section-title{
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 4.0625em;
+                line-height: 0em;
+                letter-spacing: 0.02em;
+                color: #FDF3DF;
+            }
             .event-title{
                 font-family: 'Rubik', sans-serif;
                 font-style: normal;
@@ -29,7 +38,6 @@
                 letter-spacing: .02em;
                 color: #FCF6E5;
             }
-
             .event-details{
                 margin-top: -3.5em;
                 font-family: Rubik, sans-serif;
@@ -42,7 +50,7 @@
 
             .event-description{
                 margin-top: -.5em;
-                width: 24.7em;
+                width: 24.65em;
                 font-family: Rubik, sans-serif;
                 font-style: normal;
                 font-weight: 500;
@@ -55,30 +63,22 @@
                 border-top: .4em solid #FFD807;
                 width: 41em; 
                 margin-top: 0em;
-                margin-left: .25em;
             } 
             .vertical {
-                border-left: .4em solid #FFD807;
-                height: 200em;
+                height: 213em;
                 margin-top: 43.5em;
-                margin-left: 5em;
             }
         </style> 
     </head>
 
     <body style="background-color: #0C2B35;">
-        <div class="vertical"></div>
-        <div style="position: absolute;;
+        <div class="vertical" style="border-left: .4em solid #FFD807;
+                                     margin-left: 5em;"></div>
+        <div style="position: absolute;
                     top: 35em;
                     left: 10em;">
-            <h2 style="font-family: 'Roboto', sans-serif;
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 4.0625em;
-                    line-height: 0em;
-                    letter-spacing: 0.02em;
-                    color: #FDF3DF;">UPCOMING EVENTS</h2>
-            <div class="horizontal"></div>
+            <h2 class="section-title">UPCOMING EVENTS</h2>
+            <div class="horizontal" style="margin-left: .25em;"></div>
             <div style="margin-top: -7em;">
                 <h3 class="event-title">01. Design Workshop</h3>
                 <p class="event-details">Wednesday, November 18th<br/>
@@ -118,5 +118,36 @@
                                           text-decoration: underline;">here</a>.
                 </p>
             </div>
+            <img src ="images/events_image.png">
+            <div style="margin-top: -4em;">
+                <h3 class="event-title">04. Harvard Business School x Google Panel</h3>
+                <p class="event-details">Friday, January 8th<br/>
+                        6:00 pm - 8:00 pm PST<br/>
+                        <a href="">Facebook Event Link / Webinar Registration Link</a></p>
+                <p class="event-description">We are hosting a HBS x Google Industry Panel led by 
+                        several leaders in indutry. This event has been 
+                        pushed back to Week 1 of Winter 2021. Our panelists 
+                        will share their stories on their different career 
+                        paths! We will have MBA Candidates, PMs, and 
+                        Software Engineers from different industries, 
+                        including Harvard Business School, Uber, Google, 
+                        and Salesforce. Learn more about the panelists 
+                        <a href="" style="color: #FCF6E5;
+                                          background: transparent;
+                                          text-decoration: underline;">here</a>. Please pre-submit your questions 
+                        <a href="" style="color: #FCF6E5;
+                                          background: transparent;
+                                          text-decoration: underline;">here</a>.</p>
+            </div>
         </div> 
+        <div class="vertical" style="border-right: .4em solid #FFD807;
+                                     margin-right: 5em;"></div>
+        <div style="position: absolute;
+                    top: 280em;
+                    right: 10em;">
+            <h2 class="section-title" style="text-align: right;">RECENT MILESTONES</h2>
+            <div class="horizontal" style="margin-right: .25em;
+                                           width: 41em;"></div>
+        </div>
     </body>
+</html>
