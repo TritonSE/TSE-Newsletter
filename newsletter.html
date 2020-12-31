@@ -14,13 +14,30 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>*|MC:SUBJECT|*</title>
-        <style> 
+        <style type="text/css"> 
+            @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+            body {
+                background-color: #0C2B35;
+                margin: 0em;
+                padding: 0em;
+                background-image: url('images/Lightbulbs.png');
+                background-repeat: repeat;
+                background-size: 100%;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
              a:link, a:visited, a:hover, a:active {
                 color: #D3D3D3;
                 background-color: transparent;
                 text-decoration: underline;
             }
-            .section-title{
+
+            .section-title {
                 font-family: 'Roboto', sans-serif;
                 font-style: normal;
                 font-weight: 500;
@@ -29,7 +46,8 @@
                 letter-spacing: 0.02em;
                 color: #FDF3DF;
             }
-            .title{
+
+            .title {
                 font-family: 'Rubik', sans-serif;
                 font-style: normal;
                 font-weight: normal;
@@ -39,7 +57,8 @@
                 color: #FCF6E5;
                 margin-top: 2.5em;
             }
-            .details{
+
+            .details {
                 margin-top: -1.5em;
                 font-family: Rubik, sans-serif;
                 font-style: normal;
@@ -49,7 +68,7 @@
                 color: #D3D3D3;
             }
 
-            .description{
+            .description {
                 margin-top: -.5em;
                 width: 24.32em;
                 font-family: Rubik, sans-serif;
@@ -60,31 +79,246 @@
                 line-height: 1.15em;
                 color: #8B9BA0;
             }
+
             .horizontal { 
                 border-top: .4em solid #FFD807;
                 width: 41em; 
                 margin-top: -.5em;
                 margin-bottom: 4em;
             } 
+
             .vertical {
                 height: 213em;
                 margin-top: 13.5em;
             }
+
             img {
                 width: 70em;
+            }
+
+            #header {
+                position: absolute;
+                width: 100%;
+                margin: 0em;
+                text-align: center;
+            }
+
+            #logo {
+                margin-top: 7.5625em;
+                text-align: center;
+                background-color: #153641;
+            }
+
+            .img_logo_left {
+                float: left;
+                width: 6.3125em;
+                height: 6.3125em;
+                margin-top: 1.5625em;
+                margin-left: 2.5em;
+            }
+
+            .img_logo_right {
+                float: right;
+                width: 6.3125em;
+                height: 6.3125em;
+                margin-top: 1.5625em;
+                margin-right: 2.5em;
+            }
+
+            #txt_logo { 
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 4.375em;
+                line-height: 2.18625em;
+                text-align: center;
+                letter-spacing: 0.02em;
+                color: #FCF6E5;
+            }
+
+            #social {
+                margin-top: 2.3625em;
+                text-align: center;
+            }
+
+            .img_social {
+                width: 3.2225em;
+                height: 3.2225em;
+                vertical-align: middle;
+            }
+
+            .txt_social {
+                margin-left: 0.5em;
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 2.5em;
+                vertical-align: middle;
+                letter-spacing: 0.02em;
+                color: #8B9BA0;
+            }
+
+            #facebook {
+                margin-right: 5em;
+            }
+
+            #instagram {
+                margin-right: 5em;
+            }
+
+            #intro {
+                margin-top: 10.25em;
+
+                text-align: center;
+            }
+
+            #intro h1 {
+                color: #FCF6E5;
+                font-family: 'Lato', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 4.0625em;
+                line-height: 1.25em;
+                text-align: center;
+                letter-spacing: 0.02em;
+            }
+
+            #intro h2 {
+                color: #FCF6E5;
+                font-family: 'Lato', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 3.4375em;
+                text-align: center;
+                letter-spacing: 0.02em;
+            }
+
+            #spotlight {
+                position: absolute;
+                width: 100%;
+                margin-top: 13em;
+                text-align: center;
+            }
+
+            #spotlight h2 {
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 4.0625em;
+                letter-spacing: 0.02em;
+                color: #FDF3DF
+            }
+
+            #bio h3 {
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 3.4375em;
+                text-align: center;
+                letter-spacing: 0.02em;
+                color: #FCF6E5;
+            }
+
+            #bio p {
+                margin-top: -0.75em;
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 2.8125em;
+                line-height: 1.6665625em;
+                text-align: center;
+                letter-spacing: 0.02em;
+                color: #8B9BA0
+            }
+
+            #img_spotlight {
+                margin-top: 2.1875em;
+                width: 77em;
+                height: 57.75em;
+                filter: drop-shadow(0em 0.25em 0.25em rgba(0, 0, 0, 0.75));
+            }
+
+            #img_quote {
+                position: absolute;
+                margin-top: 711em;
+                margin-left: 13.25em;
+                height: 7.53125em;
+                z-index: -1;
+            }
+
+            #quote p {
+                margin-top: 2.6em;
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 2.8125em;
+                line-height: 1em;
+                text-align: center;
+                letter-spacing: 0.02em;
+                color: #8B9BA0
+            }
+
+            footer {
+                position: absolute;
+                width: 100%;
+                margin-top: 150em;
+            }
+
+            .img_footer_left {
+                float: left;
+                width: 6.3125em;
+                height: 6.3125em;
+                margin-top: 6.393125em;
+                margin-left: 2.5em;
+                margin-bottom: 10.0625em;
+            }
+
+            .img_footer_right {
+                float: right;
+                width: 6.3125em;
+                height: 6.3125em;
+                margin-top: 6.393125em;
+                margin-right: 2.5em;
+                margin-bottom: 10.0625em;
             }
         </style> 
     </head>
 
-    <body style="background-color: #0C2B35;
-                 background-image: url('images/Lightbulbs.png');
-                 background-repeat: repeat;
-                 background-size: 100%;
-                 ">
+    <body>
+        <img id="img_quote" src="images/quote.png">
+
+        <header>
+            <a href="https://tse.ucsd.edu/" target="_blank"><div id="logo">
+                <img class="img_logo_left" src="images/logo.png">
+                <span id="txt_logo">TRITON SOFTWARE ENGINEERING</span>
+                <img class="img_logo_right" src="images/logo.png">
+            </div></a>
+            <div id="social">
+                <a href="https://www.facebook.com/TritonSE/" target="_blank"><span id="facebook">
+                    <img class="img_social" src="images/facebook.png">
+                    <span class="txt_social">@TritonSE</span>
+                </span></a>
+                <a href="https://www.instagram.com/ucsd_tse/" target="_blank"><span id="instagram">
+                    <img class="img_social" src="images/instagram.png">
+                    <span class="txt_social">@ucsd_tse</span>
+                </span></a>
+                <a href="https://www.linkedin.com/company/tritonsoftwareengineering/" target="_blank"><span id="linkedin">
+                    <img class="img_social" src="images/linkedin.png">
+                    <span class="txt_social">TritonSoftwareEngineering</span>
+                </span></a>
+            </div>
+            <div id="intro">
+                <h1>HAPPY WEEK 7 EVERYONE!</h1>
+                <center><div class="horizontal" style="width: 11.6675em; margin-top: 3.2725em; margin-bottom: 3.2725em;"></div></center>
+                <h2>Here are some things to get<br>
+                    excited about!</h2>
+            </div>
+        </header>
+
         <div class="vertical" style="border-left: .4em solid #FFD807;
                                      margin-left: 5em;"></div>
         <div style="position: absolute;
-                    top: 5em;
+                    top: 59em;
                     left: 10em;">
             <h2 class="section-title">UPCOMING EVENTS</h2>
             <div class="horizontal" style="margin-left: .25em;"></div>
@@ -154,23 +388,23 @@
         <div class="vertical" style="border-right: .4em solid #FFD807;
                                      margin-right: 5em;
                                      margin-top: 22.5em;
-                                     height: 212em;"></div>
+                                     height: 212.2em;"></div>
         <div class="horizontal" style="margin-right: .25em;
             position: absolute;
             width: 45em;
-            top: 246.75em;
+            top: 301em;
             right: 10em;"></div>
         <img src ="images/dashboard4x.png" style="position: absolute;
-                                                top: 303em;
+                                                top: 356em;
                                                 right: 10.2em;">
         <img src ="images/Zoom_one4x.png" style="position: absolute;
-                                                top: 378em;
+                                                top: 432em;
                                                 right: 10.2em;">
         <img src ="images/Zoom_two4x.png" style="position: absolute;
-                                                top: 420em;
+                                                top: 474em;
                                                 right: 10.2em;">
         <div style="position: absolute;
-                    top: 240em;
+                    top: 294.5em;
                     right: 10em;">
             <h2 class="section-title" style="text-align: right;">RECENT MILESTONES</h2>
             <div style="margin-top: -3.3em;">
@@ -205,7 +439,7 @@
                                      margin-top: 20.75em;
                                      height: 303em;"></div>
         <div style="position: absolute;
-                    top: 473em;
+                    top: 527em;
                     left: 10em;">
             <h2 class="section-title">EXECUTIVE BOARD UPDATES</h2>
             <div class="horizontal" style="margin-left: .25em;
@@ -246,5 +480,37 @@
             </div>
             <img src="images/team_picture4x.png">
         </div> 
+        
+        <div id="spotlight">
+            <h2>ALUMNI ADVICE</h2>
+            <center><div class="horizontal" style="width: 31.3125em; margin-top: -2.5em;"></div></center>
+            <div id="bio">
+                <h3>Aaron Yang</h3>
+                <p>Harvard Business School MBA Candidate<br>
+                    Formerly Salesforce Software Engineer<br>
+                    UCSD Class of 2017 - Co-Founder of TSE</p>
+            </div>
+            <img id="img_spotlight" src="images/aaron_yang.png">
+            <div id="quote">
+                <p>"Don't be afraid to be ambitious. You can do the same<br>
+                    things as anyone else. Don't look at someone, for<br>
+                    example a CEO, and assume you cannot achieve that<br>
+                    same position.<br><br>
+                    Always keep learning and improving yourself, be curious<br>
+                    about everything and keep learning new skills and<br>
+                    acquiring new experiences. Take feedback<br>
+                    constructively and internalize it to be the best version<br>
+                    of yourself as you can be.<br><br>
+                    Don't be afraid to ask for mentorship and guidance, but<br>
+                    make a solid effort before asking.<br><br>
+                    If you commit to something, do it well and do it right.<br>
+                    You get out of it what you put in."</p>
+            </div>
+        </div>
+        <footer>
+            <center><div class="horizontal" style="width: 11.6675em; margin-top: 3.2725em; margin-bottom: 3.2725em;"></div></center>
+            <img class="img_footer_left" src="images/logo.png">
+            <img class="img_footer_right" src="images/logo.png">
+        </footer>
     </body>
 </html>
