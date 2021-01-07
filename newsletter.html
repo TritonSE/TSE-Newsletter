@@ -14,296 +14,28 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>*|MC:SUBJECT|*</title>
-        <style type="text/css"> 
-            @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
-            body {
-                background-color: #0C2B35;
-                margin: 0em;
-                padding: 0em;
-                background-image: url('images/Lightbulbs.png');
-                background-repeat: repeat;
-                background-size: 100%;
-            }
-
-            a {
-                text-decoration: none;
-            }
-
-            .link:link, .link:visited, .link:hover, .link:active {
-                color: #D3D3D3;
-                background-color: transparent;
-                text-decoration: underline;
-            }
-
-            .section-title {
-                font-family: 'Roboto', sans-serif;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 4.0625em;
-                line-height: 0em;
-                letter-spacing: 0.02em;
-                color: #FDF3DF;
-            }
-
-            .title {
-                font-family: 'Rubik', sans-serif;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 3.4375em;
-                width: 17em;
-                letter-spacing: .02em;
-                color: #FCF6E5;
-                margin-top: 2.5em;
-            }
-
-            .details {
-                margin-top: -1.5em;
-                font-family: Rubik, sans-serif;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 2.25em;
-                letter-spacing: 0.02em;
-                color: #D3D3D3;
-            }
-
-            .description {
-                margin-top: -.5em;
-                width: 24.32em;
-                font-family: Rubik, sans-serif;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 2.8125em;
-                letter-spacing: 0.02em;
-                line-height: 1.15em;
-                color: #8B9BA0;
-            }
-
-            .horizontal { 
-                border-top: .4em solid #FFD807;
-                width: 41em; 
-                margin-top: -.5em;
-                margin-bottom: 4em;
-            } 
-
-            .vertical {
-                height: 213em;
-                margin-top: 13.5em;
-            }
-
-            img {
-                width: 70em;
-            }
-
-            #header {
-                position: absolute;
-                width: 100%;
-                margin: 0em;
-                text-align: center;
-            }
-
-            #logo {
-                margin-top: 7.5625em;
-                text-align: center;
-                background-color: #153641;
-            }
-
-            .img_logo_left {
-                float: left;
-                width: 6.3125em;
-                height: 6.3125em;
-                margin-top: 1.5625em;
-                margin-left: 2.5em;
-            }
-
-            .img_logo_right {
-                float: right;
-                width: 6.3125em;
-                height: 6.3125em;
-                margin-top: 1.5625em;
-                margin-right: 2.5em;
-            }
-
-            #txt_logo { 
-                font-family: 'Rubik', sans-serif;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 4.375em;
-                line-height: 2.18625em;
-                text-align: center;
-                letter-spacing: 0.02em;
-                color: #FCF6E5;
-            }
-
-            #social {
-                margin-top: 2.3625em;
-                text-align: center;
-            }
-
-            .img_social {
-                width: 3.2225em;
-                height: 3.2225em;
-                vertical-align: middle;
-            }
-
-            .txt_social {
-                margin-left: 0.5em;
-                font-family: 'Rubik', sans-serif;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 2.5em;
-                vertical-align: middle;
-                letter-spacing: 0.02em;
-                color: #8B9BA0;
-            }
-
-            #facebook {
-                margin-right: 5em;
-            }
-
-            #instagram {
-                margin-right: 5em;
-            }
-
-            #intro {
-                margin-top: 10.25em;
-
-                text-align: center;
-            }
-
-            #intro h1 {
-                color: #FCF6E5;
-                font-family: 'Lato', sans-serif;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 4.0625em;
-                line-height: 1.25em;
-                text-align: center;
-                letter-spacing: 0.02em;
-            }
-
-            #intro h2 {
-                color: #FCF6E5;
-                font-family: 'Lato', sans-serif;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 3.4375em;
-                text-align: center;
-                letter-spacing: 0.02em;
-            }
-
-            #spotlight {
-                position: absolute;
-                width: 100%;
-                margin-top: 13em;
-                text-align: center;
-            }
-
-            #spotlight h2 {
-                font-family: 'Roboto', sans-serif;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 4.0625em;
-                letter-spacing: 0.02em;
-                color: #FDF3DF
-            }
-
-            #bio h3 {
-                font-family: 'Rubik', sans-serif;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 3.4375em;
-                text-align: center;
-                letter-spacing: 0.02em;
-                color: #FCF6E5;
-            }
-
-            #bio p {
-                margin-top: -0.75em;
-                font-family: 'Rubik', sans-serif;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 2.8125em;
-                line-height: 1.6665625em;
-                text-align: center;
-                letter-spacing: 0.02em;
-                color: #8B9BA0
-            }
-
-            #img_spotlight {
-                margin-top: 2.1875em;
-                width: 77em;
-                height: 57.75em;
-                filter: drop-shadow(0em 0.25em 0.25em rgba(0, 0, 0, 0.75));
-            }
-
-            #img_quote {
-                position: absolute;
-                margin-top: 711em;
-                margin-left: 13.25em;
-                height: 7.53125em;
-                z-index: -1;
-            }
-
-            #quote p {
-                margin-top: 2.6em;
-                font-family: 'Rubik', sans-serif;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 2.8125em;
-                line-height: 1em;
-                text-align: center;
-                letter-spacing: 0.02em;
-                color: #8B9BA0
-            }
-
-            footer {
-                position: absolute;
-                width: 100%;
-                margin-top: 175em;
-            }
-
-            .img_footer_left {
-                float: left;
-                width: 6.3125em;
-                height: 6.3125em;
-                margin-top: 6.393125em;
-                margin-left: 2.5em;
-                margin-bottom: 10.0625em;
-            }
-
-            .img_footer_right {
-                float: right;
-                width: 6.3125em;
-                height: 6.3125em;
-                margin-top: 6.393125em;
-                margin-right: 2.5em;
-                margin-bottom: 10.0625em;
-            }
-        </style> 
+        <link rel="stylesheet" href="newsletter.css">
     </head>
 
     <body>
-        <!--<img id="img_quote" src="images/quote.png">-->
-
+        <!--<img id="img_quote" src="https://drive.google.com/uc?export=view&id=1iXNUvkHM4JWHDJMsPjQWdbqXec4C8yzL">-->
         <header>
             <a href="https://tse.ucsd.edu/" target="_blank"><div id="logo">
-                <img class="img_logo_left" src="images/logo.png">
+                <img class="img_logo_left" src="https://drive.google.com/uc?export=view&id=1gq2ARk8HOCKw9MBrUfrEYe3GJjHGyBta">
                 <span id="txt_logo">TRITON SOFTWARE ENGINEERING</span>
-                <img class="img_logo_right" src="images/logo.png">
+                <img class="img_logo_right" src="https://drive.google.com/uc?export=view&id=1gq2ARk8HOCKw9MBrUfrEYe3GJjHGyBta">
             </div></a>
             <div id="social">
                 <a href="https://www.facebook.com/TritonSE/" target="_blank"><span id="facebook">
-                    <img class="img_social" src="images/facebook.png">
+                    <img class="img_social" src="https://drive.google.com/uc?export=view&id=12a0jjtP5y-3BoSyxWQFXPEfli5rC9RyI">
                     <span class="txt_social">@TritonSE</span>
                 </span></a>
                 <a href="https://www.instagram.com/ucsd_tse/" target="_blank"><span id="instagram">
-                    <img class="img_social" src="images/instagram.png">
+                    <img class="img_social" src="https://drive.google.com/uc?export=view&id=1pzLNGWWHnNxMgPXKl8UQREI4TblB6o-Y">
                     <span class="txt_social">@ucsd_tse</span>
                 </span></a>
                 <a href="https://www.linkedin.com/company/tritonsoftwareengineering/" target="_blank"><span id="linkedin">
-                    <img class="img_social" src="images/linkedin.png">
+                    <img class="img_social" src="https://drive.google.com/uc?export=view&id=1vEoRqm-IqkHbhpHsSV5y0k6o_LlnG-hC">
                     <span class="txt_social">TritonSoftwareEngineering</span>
                 </span></a>
             </div>
@@ -361,7 +93,7 @@
                                           text-decoration: underline;" target="_blank">here</a>.
                 </p>
             </div>
-            <img class="img1x" src ="images/events_image4x.png">
+            <img class="img1x" src ="https://drive.google.com/uc?export=view&id=1VlZ7NevTv6799eiEF0qaoYDChcoUkqHg">
             <div style="margin-top: -4em;">
                 <h3 class="title">04. Harvard Business School x Google Panel</h3>
                 <p class="details">Friday, January 8th<br/>
@@ -394,13 +126,13 @@
             width: 45em;
             top: 301em;
             right: 10em;"></div>
-        <img src ="images/dashboard4x.png" style="position: absolute;
+        <img src ="https://drive.google.com/uc?export=view&id=1g68fckFIeZGg6-ZQ-0xQ0hfUyw4WnEpS" style="position: absolute;
                                                 top: 356em;
                                                 right: 10.2em;">
-        <img src ="images/Zoom_one4x.png" style="position: absolute;
+        <img src ="https://drive.google.com/uc?export=view&id=1TPYVjSS2QwlWlr6Xe8oiaAvLKFQX-JJC" style="position: absolute;
                                                 top: 432em;
                                                 right: 10.2em;">
-        <img src ="images/Zoom_two4x.png" style="position: absolute;
+        <img src ="https://drive.google.com/uc?export=view&id=18JqJmYshovA9u3e0HCikV9NVD9wpDVWJ" style="position: absolute;
                                                 top: 474em;
                                                 right: 10.2em;">
         <div style="position: absolute;
@@ -453,7 +185,7 @@
                     <span style="color: white;"><span style="text-decoration: underline;">Triton Software Engineering (Meetings)</span> - OPTIONAL.</span> This calendar contains all of the TSE-related meetings. Your PMs will be using this to schedule your meetings, and you will be invited to those events. So, adding this calendar is not required; however, you can add it if you are interested in what the rest of the org is up to!
                 </p>
             </div>
-            <img src ="images/calendar4x.png">
+            <img src ="https://drive.google.com/uc?export=view&id=104naNJZBso8rlpEcZ3NVB6nYxg0vtTAE">
             <div style="margin-top: -4em;">
                 <h3 class="title">02. New Executive Board Position</h3>
                 <p class="description" style="margin-top: -.9em;">Interested in deciding TSE’s branding and reputation? Apply to be TSE’s first Marketing Lead! Applications are due Thursday, November 19th. If you have any questions, reach out to Anoushka Dave on Slack.<br/><br/>
@@ -478,7 +210,7 @@
                     <span style="color: white;">Facebook Groups:</span> We have TSE Alumni and Current Members groups on Facebook. Message Benson Budiman on Slack to join!
                 </p>
             </div>
-            <img src="images/team_picture4x.png">
+            <img src="https://drive.google.com/uc?export=view&id=1Rmf3FvXAuv6JV7SOP-0XWNIDcafy7nik">
         </div> 
         
         <div id="spotlight">
@@ -490,7 +222,7 @@
                     Formerly Salesforce Software Engineer<br>
                     UCSD Class of 2017 - Co-Founder of TSE</p>
             </div>
-            <img id="img_spotlight" src="images/aaron_yang.png">
+            <img id="img_spotlight" src="https://drive.google.com/uc?export=view&id=1_RSfA5gtJt8Xv6t9LnuocsEI-7oZYKly">
             <div id="quote">
                 <p>"Don't be afraid to be ambitious. You can do the same<br>
                     things as anyone else. Don't look at someone, for<br>
@@ -509,8 +241,8 @@
         </div>
         <footer>
             <center><div class="horizontal" style="width: 11.6675em; margin-top: 3.2725em; margin-bottom: 3.2725em;"></div></center>
-            <img class="img_footer_left" src="images/logo.png">
-            <img class="img_footer_right" src="images/logo.png">
+            <img class="img_footer_left" src="https://drive.google.com/uc?export=view&id=1gq2ARk8HOCKw9MBrUfrEYe3GJjHGyBta">
+            <img class="img_footer_right" src="https://drive.google.com/uc?export=view&id=1gq2ARk8HOCKw9MBrUfrEYe3GJjHGyBta">
         </footer>
     </body>
 </html>
