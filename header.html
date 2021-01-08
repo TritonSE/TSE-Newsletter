@@ -17,7 +17,6 @@
        <link rel="stylesheet" href="mystyle.css">
        <style type="text/css">
            @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-           @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
  
            body {
                margin: 0;
@@ -41,15 +40,14 @@
                width: 100%;
                table-layout: fixed;
                background-color: #0C2B35;
-               background-image: url('images/Lightbulbs.png');
-               background-repeat: repeat;
-               background-size: 100%;
                padding-bottom: 40px;
            }
  
            .webkit {
                max-width: 600px;
-               /* background-color: #0C2B35; */
+               background-image: url('https://drive.google.com/uc?export=view&id=1dQKwKeUTLuZFi64MaGJNrTLPuv_t4wY1');
+               background-repeat: repeat;
+               background-size: 100%;
            }
  
            .outer {
@@ -65,10 +63,18 @@
                text-align: center;
            }
  
-           .logo .column {
+           .column {
                width: 100%;
                display: inline-block;
                vertical-align: middle;
+           }
+           
+           .logo .columnLogo {
+               max-width: 80px;
+           }
+
+           .logo .columnTitle {
+               max-width: 440px;
            }
  
            .logo .padding {
@@ -95,11 +101,13 @@
                font-size: 0;
                text-align: center;
            }
- 
-           .social .column {
-               width: 100%;
-               display: inline-block;
-               vertical-align: middle;
+
+           .social .columnLeft {
+               max-width: 150px;
+           }
+
+           .social .columnRight {
+               max-width: 268px;
            }
  
            .social .icon {
@@ -119,8 +127,45 @@
                margin-left: 10px;
            }
  
-           @media screen and (max-width: 600px) {
-              
+            @media screen and (max-width: 600px) {
+                .logo .columnLogo {
+                    max-width: 40px;
+                }
+
+                .logo .columnTitle {
+                    max-width: 240px;
+                }
+                
+                .logo .padding {
+                    padding: 2px;
+                }
+        
+                .logo .title {
+                    font-size: 12px !important;
+                }
+        
+                .logo .lightbulb {
+                    width: 32 !important;
+                    max-width: 32px !important;
+                }
+
+                .social .columnLeft {
+                    max-width: 80px !important;
+                }
+
+                .social .columnRight {
+                    max-width: 140px !important;
+                }
+        
+                .social .icon {
+                    width: 12 !important;
+                    max-width: 12px !important;
+                }
+        
+                .social .com {
+                    font-size: 8px !important;
+                    margin-left: 3px !important;
+                }
            }
        </style>
    </head>
@@ -137,18 +182,18 @@
                            <table width="100%" style="margin-top: 50px;">
                                <tr>
                                    <td class="logo">
-                                       <table class="column" style="max-width: 80px;">
+                                       <table class="column columnLogo">
                                            <tr>
                                                <td class="padding">
                                                    <table class="content">
                                                        <tr>
-                                                           <td><img class="lightbulb" src="images/logo.png"></td>
+                                                           <td><img class="lightbulb" src="https://drive.google.com/uc?export=view&id=1gq2ARk8HOCKw9MBrUfrEYe3GJjHGyBta"></td>
                                                        </tr>
                                                    </table>
                                                </td>
                                            </tr>
                                        </table>
-                                       <table class="column" style="max-width: 440px;">
+                                       <table class="column columnTitle">
                                            <tr>
                                                <td class="padding">
                                                    <table class="content">
@@ -159,12 +204,12 @@
                                                </td>
                                            </tr>
                                        </table>
-                                       <table class="column" style="max-width: 80px;">
+                                       <table class="column columnLogo">
                                            <tr>
                                                <td class="padding">
                                                    <table class="content">
                                                        <tr>
-                                                           <td><img class="lightbulb" src="images/logo.png"></td>
+                                                           <td><img class="lightbulb" src="https://drive.google.com/uc?export=view&id=1gq2ARk8HOCKw9MBrUfrEYe3GJjHGyBta"></td>
                                                        </tr>
                                                    </table>
                                                </td>
@@ -179,39 +224,39 @@
                    <!- Social ->
                    <tr>
                        <td>
-                           <table width="100%">
+                           <table width="100%" style="margin-top: 20px;">
                                <tr>
                                    <td class="social">
-                                       <table class="column" style="max-width: 150px;">
+                                       <table class="column columnLeft">
                                            <tr>
                                                <td>
                                                    <table class="content">
                                                        <tr>
-                                                           <td><img class="icon" src="images/facebook.png"></td>
+                                                           <td><img class="icon" src="https://drive.google.com/uc?export=view&id=12a0jjtP5y-3BoSyxWQFXPEfli5rC9RyI"></td>
                                                            <td><p class="com">@TritonSE</p></td>
                                                        </tr>
                                                    </table>
                                                </td>
                                            </tr>
                                        </table>
-                                       <table class="column" style="max-width: 150px;">
+                                       <table class="column columnLeft">
                                            <tr>
                                                <td>
                                                    <table class="content">
                                                        <tr>
-                                                           <td><img class="icon" src="images/instagram.png"></td>
+                                                           <td><img class="icon" src="https://drive.google.com/uc?export=view&id=1pzLNGWWHnNxMgPXKl8UQREI4TblB6o-Y"></td>
                                                            <td><p class="com">@ucsd_tse</p></td>
                                                        </tr>
                                                    </table>
                                                </td>
                                            </tr>
                                        </table>
-                                       <table class="column" style="max-width: 268px;">
+                                       <table class="column columnRight">
                                            <tr>
                                                <td>
                                                    <table class="content">
                                                        <tr>
-                                                           <td><img class="icon" src="images/linkedin.png"></td>
+                                                           <td><img class="icon" src="https://drive.google.com/uc?export=view&id=1vEoRqm-IqkHbhpHsSV5y0k6o_LlnG-hC"></td>
                                                            <td><p class="com">@TritonSoftware Engineering</p></td>
                                                        </tr>
                                                    </table>
