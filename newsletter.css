@@ -4,17 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-body {
+/* body {
     background-color: #0C2B35;
     margin: 0em;
     padding: 0em;
     background-image: url('https://drive.google.com/uc?export=view&id=1dQKwKeUTLuZFi64MaGJNrTLPuv_t4wY1');
     background-repeat: repeat;
     background-size: 100%;
-}
-
-a {
-    text-decoration: none;
 }
 
 .link:link, .link:visited, .link:hover, .link:active {
@@ -266,4 +262,159 @@ footer {
     margin-top: 6.393125em;
     margin-right: 2.5em;
     margin-bottom: 10.0625em;
+} */
+
+
+
+
+/* ELIAS - header.html */
+.ef-body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.ef-table {
+    border-spacing: 0;
+}
+
+.ef-td {
+    padding: 0;
+}
+
+.ef-a {
+    text-decoration: none;
+}
+
+.ef-wrapper {
+    width: 100%;
+    table-layout: fixed;
+    background-color: #0C2B35;
+}
+
+.ef-webkit {
+    max-width: 600px;
+
+}
+
+.ef-outer {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    border-spacing: 0;
+
+    background-image: url('https://drive.google.com/uc?export=view&id=1dQKwKeUTLuZFi64MaGJNrTLPuv_t4wY1');
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
+.ef-logo {
+    background-color: #153641;
+    font-size: 0;
+    text-align: center;
+}
+
+.ef-column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ef-logo .ef-columnLogo {
+    max-width: 80px;
+}
+
+.ef-logo .ef-columnTitle {
+    max-width: 440px;
+}
+
+.ef-logo .ef-padding {
+    padding: 15px;
+}
+
+.ef-logo .ef-title {
+    color: #FCF6E5;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin: auto;
+}
+
+.ef-logo .ef-lightbulb {
+    width: 50;
+    max-width: 50px;
+}
+
+.ef-social {
+    font-size: 0;
+    text-align: center;
+}
+
+.ef-social .ef-columnLeft {
+    max-width: 150px;
+}
+
+.ef-social .ef-columnRight {
+    max-width: 268px;
+}
+
+.ef-social .ef-icon {
+    width: 30;
+    max-width: 30px;
+}
+
+.ef-social .ef-com {
+    color: #8B9BA0;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+    margin-left: 10px;
+}
+
+ @media screen and (max-width: 600px) {
+     .ef-logo .ef-columnLogo {
+         max-width: 40px;
+     }
+
+     .ef-logo .ef-columnTitle {
+         max-width: 240px;
+     }
+     
+     .ef-logo .ef-padding {
+         padding: 2px;
+     }
+
+     .ef-logo .ef-title {
+         font-size: 12px !important;
+     }
+
+     .ef-logo .ef-lightbulb {
+         width: 32 !important;
+         max-width: 32px !important;
+     }
+
+     .ef-social .ef-columnLeft {
+         max-width: 80px !important;
+     }
+
+     .ef-social .ef-columnRight {
+         max-width: 140px !important;
+     }
+
+     .ef-social .ef-icon {
+         width: 12 !important;
+         max-width: 12px !important;
+     }
+
+     .ef-social .ef-com {
+         font-size: 8px !important;
+         margin-left: 3px !important;
+     }
 }
