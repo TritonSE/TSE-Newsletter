@@ -78,10 +78,6 @@ a {
 .vertical {
     height: 213em;
     margin-top: 13.5em;
-    border: .2em solid #FFD807; 
-    color: #FFD807; 
-    background-color: #FFD807; 
-    width: 0em;
 }
 
 img {
