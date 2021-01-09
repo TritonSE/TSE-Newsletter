@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-/* body {
+.sk-body {
     background-color: #0C2B35;
     margin: 0em;
     padding: 0em;
@@ -13,13 +13,13 @@
     background-size: 100%;
 }
 
-.link:link, .link:visited, .link:hover, .link:active {
+.sk-link:link, .sk-link:visited, .sk-link:hover, .sk-link:active {
     color: #D3D3D3;
     background-color: transparent;
     text-decoration: underline;
 }
 
-.section-title {
+.sk-section-title {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -29,7 +29,7 @@
     color: #FDF3DF;
 }
 
-.title {
+.sk-title {
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -40,7 +40,7 @@
     margin-top: 2.5em;
 }
 
-.details {
+.sk-details {
     margin-top: -1.5em;
     font-family: Rubik, sans-serif;
     font-style: normal;
@@ -50,7 +50,7 @@
     color: #D3D3D3;
 }
 
-.description {
+.sk-description {
     margin-top: -.5em;
     width: 24.32em;
     font-family: Rubik, sans-serif;
@@ -62,36 +62,36 @@
     color: #8B9BA0;
 }
 
-.horizontal { 
+.sk-horizontal { 
     border-top: .4em solid #FFD807;
     width: 41em; 
     margin-top: -.5em;
     margin-bottom: 4em;
 } 
 
-.vertical {
+.sk-vertical {
     height: 213em;
     margin-top: 13.5em;
 }
 
-img {
+.sk-img {
     width: 70em;
 }
 
-#header {
+#sk-header {
     position: absolute;
     width: 100%;
     margin: 0em;
     text-align: center;
 }
 
-#logo {
+#sk-logo {
     margin-top: 7.5625em;
     text-align: center;
     background-color: #153641;
 }
 
-.img_logo_left {
+.sk-img_logo_left {
     float: left;
     width: 6.3125em;
     height: 6.3125em;
@@ -99,7 +99,7 @@ img {
     margin-left: 2.5em;
 }
 
-.img_logo_right {
+.sk-img_logo_right {
     float: right;
     width: 6.3125em;
     height: 6.3125em;
@@ -107,7 +107,7 @@ img {
     margin-right: 2.5em;
 }
 
-#txt_logo { 
+#sk-txt_logo { 
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -118,18 +118,18 @@ img {
     color: #FCF6E5;
 }
 
-#social {
+#sk-social {
     margin-top: 2.3625em;
     text-align: center;
 }
 
-.img_social {
+.sk-img_social {
     width: 3.2225em;
     height: 3.2225em;
     vertical-align: middle;
 }
 
-.txt_social {
+.sk-txt_social {
     margin-left: 0.5em;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
@@ -140,21 +140,21 @@ img {
     color: #8B9BA0;
 }
 
-#facebook {
+#sk-facebook {
     margin-right: 5em;
 }
 
-#instagram {
+#sk-instagram {
     margin-right: 5em;
 }
 
-#intro {
+#sk-intro {
     margin-top: 10.25em;
 
     text-align: center;
 }
 
-#intro h1 {
+#sk-intro h1 {
     color: #FCF6E5;
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -165,7 +165,7 @@ img {
     letter-spacing: 0.02em;
 }
 
-#intro h2 {
+#sk-intro h2 {
     color: #FCF6E5;
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -175,14 +175,14 @@ img {
     letter-spacing: 0.02em;
 }
 
-#spotlight {
+#sk-spotlight {
     position: absolute;
     width: 100%;
     margin-top: 13em;
     text-align: center;
 }
 
-#spotlight h2 {
+#sk-spotlight h2 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -191,7 +191,7 @@ img {
     color: #FDF3DF
 }
 
-#bio h3 {
+#sk-bio h3 {
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -201,7 +201,7 @@ img {
     color: #FCF6E5;
 }
 
-#bio p {
+#sk-bio p {
     margin-top: -0.75em;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
@@ -213,14 +213,14 @@ img {
     color: #8B9BA0
 }
 
-#img_spotlight {
+#sk-img_spotlight {
     margin-top: 2.1875em;
     width: 77em;
     height: 57.75em;
     filter: drop-shadow(0em 0.25em 0.25em rgba(0, 0, 0, 0.75));
 }
 
-#img_quote {
+#sk-img_quote {
     position: absolute;
     margin-top: 711em;
     margin-left: 13.25em;
@@ -228,7 +228,7 @@ img {
     z-index: -1;
 }
 
-#quote p {
+#sk-quote p {
     margin-top: 2.6em;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
@@ -240,13 +240,13 @@ img {
     color: #8B9BA0
 }
 
-footer {
+.sk-footer {
     position: absolute;
     width: 100%;
     margin-top: 175em;
 }
 
-.img_footer_left {
+.sk-img_footer_left {
     float: left;
     width: 6.3125em;
     height: 6.3125em;
@@ -255,14 +255,14 @@ footer {
     margin-bottom: 10.0625em;
 }
 
-.img_footer_right {
+.sk-img_footer_right {
     float: right;
     width: 6.3125em;
     height: 6.3125em;
     margin-top: 6.393125em;
     margin-right: 2.5em;
     margin-bottom: 10.0625em;
-} */
+}
 
 
 
