@@ -67,7 +67,9 @@ a {
 }
 
 .horizontal { 
-    border-top: .4em solid #FFD807;
+    border: .2em solid #FFD807; 
+    color: #FFD807; 
+    background-color: #FFD807; 
     width: 41em; 
     margin-top: -.5em;
     margin-bottom: 4em;
