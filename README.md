@@ -4,6 +4,6 @@ Please do not directly edit version0.html, this is the file you should reference
 
 Feel free to test with your own files in your branches!
 
-We will write a script to generate the HTML files using the (Dominate library)[https://github.com/Knio/dominate].
+We will write a script to generate the HTML files using the [Dominate library](https://github.com/Knio/dominate).
 
 To install, run: `sudo pip install dominate`
