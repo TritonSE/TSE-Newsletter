@@ -392,8 +392,30 @@
 }
 
 .ef-greeting .sk-horizontal {
-    border: .2vw solid #FFD807; 
-    width: 11.6675vw;
+    border: .1em solid #FFD807; 
+    width: 5.5em;
+
+    margin: 0.3em auto;
+}
+
+.ef-welcome {
+    color: #FCF6E5;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.75px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.ef-announcement {
+    color: #FCF6E5;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    letter-spacing: 0.02em;
+    text-align: center;
 }
 
 /* footer.html */
@@ -403,8 +425,8 @@
 }
 
 .ef-footer .sk-horizontal {
-    border: .2vw solid #FFD807; 
-    width: 11.6675vw;
+    border: .2em solid #FFD807; 
+    width: 5.5em;
 }
 
 .ef-footer .ef-columnLogo {
