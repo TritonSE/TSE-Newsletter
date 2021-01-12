@@ -385,6 +385,17 @@
     margin-left: 10px;
 }
 
+/* greetings.html */
+
+.ef-greeting {
+    text-align: center;
+}
+
+.ef-greeting .sk-horizontal {
+    border: .2vw solid #FFD807; 
+    width: 11.6675vw;
+}
+
 /* footer.html */
 
 .ef-footer {
