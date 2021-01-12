@@ -4,270 +4,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-.sk-body {
-    background-color: #0C2B35;
-    margin: 0em;
-    padding: 0em;
-    background-image: url('https://drive.google.com/uc?export=view&id=1dQKwKeUTLuZFi64MaGJNrTLPuv_t4wY1');
-    background-repeat: repeat;
-    background-size: 100%;
-}
 
-.sk-link:link, .sk-link:visited, .sk-link:hover, .sk-link:active {
+.link:link, .link:visited, .link:hover, .link:active {
     color: #D3D3D3;
     background-color: transparent;
-    text-decoration: underline;
+}
+
+.sk-height{
+    height: 100%;
 }
 
 .sk-section-title {
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 4.0625em;
-    line-height: 0em;
-    letter-spacing: 0.02em;
+    font-size: 40px;
+    letter-spacing: .32px;
     color: #FDF3DF;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .sk-title {
-    font-family: 'Rubik', sans-serif;
+    font-family: Rubik, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 3.4375em;
-    width: 17em;
-    letter-spacing: .02em;
+    font-size: 20px;
+    letter-spacing: .32px;
     color: #FCF6E5;
-    margin-top: 2.5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .sk-details {
-    margin-top: -1.5em;
     font-family: Rubik, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 2.25em;
-    letter-spacing: 0.02em;
+    font-size: 13px;
+    letter-spacing: .32px;
     color: #D3D3D3;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .sk-description {
-    margin-top: -.5em;
-    width: 24.32em;
     font-family: Rubik, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 2.8125em;
-    letter-spacing: 0.02em;
-    line-height: 1.15em;
+    font-size: 17px;
+    letter-spacing: .32px;
     color: #8B9BA0;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-.sk-horizontal { 
-    border: .2em solid #FFD807; 
+.sk-horiz { 
+    border: 1.5px solid #FFD807; 
     color: #FFD807; 
     background-color: #FFD807;
-    width: 41em; 
-    margin-top: -.5em;
-    margin-bottom: 4em;
+    width: 400px;
 } 
 
 .sk-vertical {
-    height: 213em;
-    margin-top: 13.5em;
+    height: 100%;
 }
 
 .sk-img {
-    width: 70em;
+    width: 450px;
 }
 
-#sk-header {
-    position: absolute;
+.sk-body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.sk-wrapper {
     width: 100%;
-    margin: 0em;
-    text-align: center;
+    table-layout: fixed;
+    background-color: #0C2B35;
 }
-
-#sk-logo {
-    margin-top: 7.5625em;
-    text-align: center;
-    background-color: #153641;
+.sk-webkit {
+    max-width: 600px;
 }
-
-.sk-img_logo_left {
-    float: left;
-    width: 6.3125em;
-    height: 6.3125em;
-    margin-top: 1.5625em;
-    margin-left: 2.5em;
-}
-
-.sk-img_logo_right {
-    float: right;
-    width: 6.3125em;
-    height: 6.3125em;
-    margin-top: 1.5625em;
-    margin-right: 2.5em;
-}
-
-#sk-txt_logo { 
-    font-family: 'Rubik', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 4.375em;
-    line-height: 2.18625em;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #FCF6E5;
-}
-
-#sk-social {
-    margin-top: 2.3625em;
-    text-align: center;
-}
-
-.sk-img_social {
-    width: 3.2225em;
-    height: 3.2225em;
-    vertical-align: middle;
-}
-
-.sk-txt_social {
-    margin-left: 0.5em;
-    font-family: 'Rubik', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2.5em;
-    vertical-align: middle;
-    letter-spacing: 0.02em;
-    color: #8B9BA0;
-}
-
-#sk-facebook {
-    margin-right: 5em;
-}
-
-#sk-instagram {
-    margin-right: 5em;
-}
-
-#sk-intro {
-    margin-top: 10.25em;
-
-    text-align: center;
-}
-
-#sk-intro h1 {
-    color: #FCF6E5;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 4.0625em;
-    line-height: 1.25em;
-    text-align: center;
-    letter-spacing: 0.02em;
-}
-
-#sk-intro h2 {
-    color: #FCF6E5;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 3.4375em;
-    text-align: center;
-    letter-spacing: 0.02em;
-}
-
-#sk-spotlight {
-    position: absolute;
+.sk-outer {
+    margin: 0 auto;
     width: 100%;
-    margin-top: 13em;
-    text-align: center;
-}
+    max-width: 600px;
+    border-spacing: 0;
 
-#sk-spotlight h2 {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 4.0625em;
-    letter-spacing: 0.02em;
-    color: #FDF3DF
-}
+    background-image: url('https://drive.google.com/uc?export=view&id=1dQKwKeUTLuZFi64MaGJNrTLPuv_t4wY1');
+    background-repeat: repeat;
+    background-size: 100%;
 
-#sk-bio h3 {
-    font-family: 'Rubik', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 3.4375em;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #FCF6E5;
+    padding-bottom: 50px;
 }
-
-#sk-bio p {
-    margin-top: -0.75em;
-    font-family: 'Rubik', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2.8125em;
-    line-height: 1.6665625em;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #8B9BA0
-}
-
-#sk-img_spotlight {
-    margin-top: 2.1875em;
-    width: 77em;
-    height: 57.75em;
-    filter: drop-shadow(0em 0.25em 0.25em rgba(0, 0, 0, 0.75));
-}
-
-#sk-img_quote {
-    position: absolute;
-    margin-top: 711em;
-    margin-left: 13.25em;
-    height: 7.53125em;
-    z-index: -1;
-}
-
-#sk-quote p {
-    margin-top: 2.6em;
-    font-family: 'Rubik', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2.8125em;
-    line-height: 1em;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #8B9BA0
-}
-
-.sk-footer {
-    position: absolute;
+.sk-table {
+    border-spacing: 0;
     width: 100%;
-    margin-top: 175em;
+}
+.sk-td {
+    padding: 0;
+    vertical-align: top;
 }
 
-.sk-img_footer_left {
-    float: left;
-    width: 6.3125em;
-    height: 6.3125em;
-    margin-top: 6.393125em;
-    margin-left: 2.5em;
-    margin-bottom: 10.0625em;
+.sk-a {
+    text-decoration: none;
 }
 
-.sk-img_footer_right {
-    float: right;
-    width: 6.3125em;
-    height: 6.3125em;
-    margin-top: 6.393125em;
-    margin-right: 2.5em;
-    margin-bottom: 10.0625em;
+.sk-entry{
+    padding-top: 25px;
 }
 
+.sk-desc-pad{
+    padding-right: 110px;
+    padding-top: 8px;
+}
 
-
+.sk-detail-pad{
+    padding-top: 8px;
+}
 
 /* ELIAS */
 /* all */
