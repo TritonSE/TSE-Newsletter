@@ -107,6 +107,9 @@
     width: 450px;
 }
 
+.sk-img-right {
+    padding-left: 90px;
+}
 
 .sk-a {
     text-decoration: none;
