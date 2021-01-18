@@ -135,6 +135,7 @@
 
 .ef-table {
     border-spacing: 0;
+    width: 100%;
 }
 
 .ef-td {
@@ -153,7 +154,7 @@
 
 .ef-webkit {
     max-width: 37.5em;
-
+    margin: 0 auto;
 }
 
 .ef-outer {
@@ -170,6 +171,10 @@
 }
 
 /* header.html */
+
+.ef-header {
+    margin-top: 3.125em;
+}
 
 .ef-logo {
     background-color: #153641;
@@ -245,6 +250,10 @@
 
 .ef-greeting {
     text-align: center;
+}
+
+.ef-center {
+    margin: 0 auto;
 }
 
 .ef-greeting .sk-horizontal {
