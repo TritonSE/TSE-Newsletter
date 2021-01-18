@@ -200,7 +200,7 @@
     padding: 15px;
 }
 
-.ef-logo p {
+.ef-logo h1 {
     color: #FCF6E5;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
@@ -214,6 +214,10 @@
 .ef-lightbulb {
     width: 50;
     max-width: 50px;
+}
+
+.ef-socials {
+    margin-top: 1.25em;
 }
 
 .ef-social {
@@ -234,7 +238,7 @@
     max-width: 30px;
 }
 
-.ef-social .ef-com {
+.ef-social p {
     color: #8B9BA0;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
@@ -263,7 +267,7 @@
     margin: 0.3em auto;
 }
 
-.ef-welcome {
+.ef-greeting h2 {
     color: #FCF6E5;
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -273,7 +277,7 @@
     text-align: center;
 }
 
-.ef-announcement {
+.ef-greeting h3 {
     color: #FCF6E5;
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -296,6 +300,14 @@
 
 .ef-footer .ef-columnLogo {
     max-width: 80px;
+}
+
+.ef-footer .ef-columnLeft {
+    float: left;
+}
+
+.ef-footer .ef-columnRight {
+    float: right;
 }
 
 @media screen and (max-width: 600px) {
@@ -333,7 +345,7 @@
         max-width: 12px !important;
     }
 
-    .ef-social .ef-com {
+    .ef-social p {
         font-size: 8px !important;
         margin-left: 3px !important;
     }
@@ -342,11 +354,11 @@
         width: 2.25em !important;
     }
 
-    .ef-welcome {
+    .ef-greeting h2 {
         font-size: 12px !important;
     }
     
-    .ef-announcement {
+    .ef-greeting h3 {
         font-size: 9px !important;
     }
 
