@@ -17,6 +17,7 @@
 }
 .sk-webkit {
     max-width: 600px;
+    margin: 0 auto;
 }
 .sk-outer {
     margin: 0 auto;
@@ -40,6 +41,10 @@
     vertical-align: top;
 }
 
+.sk-section-padding {
+    padding-top: 20px;
+}
+
 .link:link, .link:visited, .link:hover, .link:active {
     color: #D3D3D3;
     background-color: transparent;
@@ -53,7 +58,7 @@
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 28px;
     letter-spacing: .32px;
     color: #FDF3DF;
     margin-top: 0px;
@@ -93,22 +98,44 @@
     margin-bottom: 0px;
 }
 
+.sk-right-line-pad {
+    padding-right: 30px;
+    padding-top: 60px;
+}
+
+.sk-left-line-pad {
+    padding-left: 30px;
+    padding-top: 60px;
+}
+
 .sk-horiz { 
     border: 1.5px solid #FFD807; 
     color: #FFD807; 
     background-color: #FFD807;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: -13px;
 } 
 
-.sk-vertical {
+.sk-vertical-left {
     height: 100%;
+    border-left: 3px solid #FFD807;
 }
 
-.sk-img {
+.sk-vertical-right {
+    height: 100%;
+    border-right: 3px solid #FFD807;
+}
+
+.sk-img-left {
     width: 450px;
 }
 
 .sk-img-right {
-    padding-left: 90px;
+    width: 450px;
+    margin-right: 0px;
+    margin-left: auto;
+    display: block;
 }
 
 .sk-a {
@@ -143,6 +170,10 @@
 
 .sk-right{
     text-align: -webkit-right;
+}
+
+.sk-center{
+    text-align: -webkit-center;
 }
 
 
