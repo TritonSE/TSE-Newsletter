@@ -200,7 +200,7 @@
     padding: 15px;
 }
 
-.ef-logo .ef-title {
+.ef-logo p {
     color: #FCF6E5;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
@@ -311,7 +311,7 @@
         padding: 2px;
     }
 
-    .ef-logo .ef-title {
+    .ef-logo p {
         font-size: 12px !important;
     }
 
