@@ -2,13 +2,18 @@ import dominate
 from dominate.tags import *
 
 def _head():
-    """This function generates a header using tables and returns it as HTML. DO NOT EDIT!
+    """This function generates a header using table elements and returns it as HTML. The header consists of the banner logo
+    (lightbulbs and title) and the social media handles with their icons. The banner links to the main TSE website and each
+    social media handle links to their respective accounts. This section of the newsletter should not need to be changed
+    since no new information needs to be added. DO NOT EDIT!
 
     Args:
         None
 
     Returns:
-        The generated HTML header
+        The generated HTML header. The header consists of table elements split into two rows. The top row contains the banner and the
+        bottom row contains the social media handles. Within each row are more tables and columns containing the contents with anchor tags, 
+        namely the lightbulbs, title, social media icons, and social media handles.
 
     Raises:
         None
@@ -49,4 +54,4 @@ def _head():
                     with td(cls='ef-td'):
                         p('@Triton Software Engineering')
 
-    print(doc)
+    return doc
