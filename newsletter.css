@@ -131,6 +131,12 @@
     width: 450px;
 }
 
+.sk-img-center {
+    width: 450px;
+    display: block;
+    margin: auto;
+}
+
 .sk-img-right {
     width: 450px;
     margin-right: 0px;
@@ -161,6 +167,12 @@
 
 .sk-right-desc-pad{
     padding-left: 110px;
+    padding-top: 8px;
+}
+
+.sk-center-desc-pad{
+    padding-left: 70px;
+    padding-right: 70px;
     padding-top: 8px;
 }
 
