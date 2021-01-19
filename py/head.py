@@ -25,7 +25,7 @@ def _head():
             with table(cls='ef-table ef-column ef-columnLogo').add(tr()).add(td(cls='ef-td ef-padding')).add(table(cls='ef-table ef-content')).add(tr()).add(td(cls='ef-td')):
                 img(cls='ef-lightbulb', src='https://drive.google.com/uc?export=view&id=1gq2ARk8HOCKw9MBrUfrEYe3GJjHGyBta')
             # TSE
-            with table(cls='ef-table ef-column ef-columnLogo').add(tr()).add(td(cls='ef-td ef-padding')).add(table(cls='ef-table ef-content')).add(tr()).add(th()):
+            with table(cls='ef-table ef-column ef-columnTitle').add(tr()).add(td(cls='ef-td ef-padding')).add(table(cls='ef-table ef-content')).add(tr()).add(th()):
                 h1('TRITON SOFTWARE ENGINEERING')
             # Right lightbulb
             with table(cls='ef-table ef-column ef-columnLogo').add(tr()).add(td(cls='ef-td ef-padding')).add(table(cls='ef-table ef-content')).add(tr()).add(td(cls='ef-td')):
@@ -49,6 +49,6 @@ def _head():
                 with td(cls='ef-td'):
                     img(cls='ef-icon', src='https://drive.google.com/uc?export=view&id=1vEoRqm-IqkHbhpHsSV5y0k6o_LlnG-hC')
                 with td(cls='ef-td'):
-                    p('@Triton Software Engineering')
+                    p('Triton Software Engineering')
 
     return header

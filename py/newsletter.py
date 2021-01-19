@@ -23,10 +23,10 @@ with doc:
     with div(cls='ef-wrapper').add(div(cls='ef-container')).add(table(cls='ef-table ef-outer')):
         _head()
         _greetings()
-        _bodylineleft()
-        _bodylineright()
-        _bodynoline()
-        _foot()
+        # _bodylineleft()
+        # _bodylineright()
+        # _bodynoline()
+        # _foot()
 
 # write out final output to newsletter.html
 with open('newsletter.html', 'w') as out_file:
