@@ -132,9 +132,9 @@
 }
 
 .sk-img-center {
-    width: 28.125em;
-    display: block;
-    margin: auto;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
 }
 
 .sk-img-right {
