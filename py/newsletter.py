@@ -20,7 +20,7 @@ with doc.head:
 # create the document body
 with doc:
     # enclose all of the elements within div elements (currently set to ef-styling)
-    with div(cls='ef-wrapper').add(div(cls='ef-container')).add(div(cls='ef-table ef-outer')):
+    with div(cls='ef-wrapper').add(div(cls='ef-container')).add(table(cls='ef-table ef-outer')):
         _head()
         _greetings()
         _bodylineleft()

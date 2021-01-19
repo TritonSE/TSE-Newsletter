@@ -1,19 +1,36 @@
+import html
 import dominate
 from dominate.tags import *
 
 def _greetings():
-    """Returns the generated HTML greetings. TODO: edit this description
-
-    TODO: A description here, according to Google's Python style guide https://github.com/google/styleguide/blob/gh-pages/pyguide.md#38-comments-and-docstrings
+    """This function generates a greetings section below the header using table elements and returns it as HTML. 
+    The greetings consists of two subheaders separated by a horizontal line. The first subheader prints, "HAPPY WEEK # EVERYONE"
+    and the second subheader prints, "Here are some things to get excited about!". The horizontal line in the middle is a bordered
+    yellow div. The only part of this section that should be edited is the week number (indicated with a comment in the code below).
 
     Args:
-        TODO
+        None
 
     Returns:
-        TODO
+        An HTML document object containing the newsletter's greetings. The greetings consists of two table elements within 
+        a single table row. Each of the two rows contains the messages described above and the rows are separated by the horizontal
+        line div.
 
     Raises:
-        TODO
+        None
     """
 
-    return h2('This is the greetings.')
+    with div() as greeting:
+        # Greeting
+        with tr().add(td(cls='ef-td')).add(table(cls='ef-table')).add(tr()).add(td(cls='ef-td ef-greeting')):
+            # First subheader
+            with table(cls='ef-table ef-center').add(tr()).add(td(cls='ef-td')):
+                # Edit # according to week
+                h2('HAPPY WEEK 7 EVERYONE!')
+            # Horizontal line
+            hr(cls='sk-horizontal')
+            # Second subheader
+            with table(cls='ef-table ef-center').add(tr()).add(td(cls='ef-td')):
+                h3('Here are some things to get excited about!')
+
+    return greeting
