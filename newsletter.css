@@ -114,7 +114,7 @@
     background-color: #FFD807;
     width: 100%;
     margin-top: 8px;
-    margin-bottom: -16px;
+    margin-bottom: 0px;
 } 
 
 .sk-vertical-left {
@@ -158,6 +158,10 @@
 
 .sk-entry{
     padding-top: 25px;
+}
+
+.sk-first-entry{
+    padding-top: 12px;
 }
 
 .sk-left-desc-pad{
