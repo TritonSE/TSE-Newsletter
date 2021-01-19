@@ -4,6 +4,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+.sk-body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.sk-wrapper {
+    width: 100%;
+    table-layout: fixed;
+    background-color: #0C2B35;
+}
+.sk-webkit {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.sk-outer {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    border-spacing: 0;
+
+    background-image: url('https://drive.google.com/uc?export=view&id=1dQKwKeUTLuZFi64MaGJNrTLPuv_t4wY1');
+    background-repeat: repeat;
+    background-size: 100%;
+
+    padding-bottom: 50px;
+}
+.sk-table {
+    border-spacing: 0;
+    width: 100%;
+}
+
+.sk-td {
+    padding: 0;
+    vertical-align: top;
+}
+
+.sk-section-padding {
+    padding-top: 20px;
+}
 
 .link:link, .link:visited, .link:hover, .link:active {
     color: #D3D3D3;
@@ -18,7 +58,7 @@
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 28px;
     letter-spacing: .32px;
     color: #FDF3DF;
     margin-top: 0px;
@@ -58,72 +98,85 @@
     margin-bottom: 0px;
 }
 
+.sk-right-line-pad {
+    padding-right: 30px;
+    padding-top: 60px;
+}
+
+.sk-left-line-pad {
+    padding-left: 30px;
+    padding-top: 60px;
+}
+
 .sk-horiz { 
     border: 1.5px solid #FFD807; 
     color: #FFD807; 
     background-color: #FFD807;
-    width: 400px;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: -13px;
 } 
 
-.sk-vertical {
+.sk-vertical-left {
     height: 100%;
+    border-left: 3px solid #FFD807;
 }
 
-.sk-img {
+.sk-vertical-right {
+    height: 100%;
+    border-right: 3px solid #FFD807;
+}
+
+.sk-img-left {
     width: 450px;
 }
 
-.sk-body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
-
-.sk-wrapper {
-    width: 100%;
-    table-layout: fixed;
-    background-color: #0C2B35;
-}
-.sk-webkit {
-    max-width: 600px;
-}
-.sk-outer {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 600px;
-    border-spacing: 0;
-
-    background-image: url('https://drive.google.com/uc?export=view&id=1dQKwKeUTLuZFi64MaGJNrTLPuv_t4wY1');
-    background-repeat: repeat;
-    background-size: 100%;
-
-    padding-bottom: 50px;
-}
-.sk-table {
-    border-spacing: 0;
-    width: 100%;
-}
-.sk-td {
-    padding: 0;
-    vertical-align: top;
+.sk-img-right {
+    width: 450px;
+    margin-right: 0px;
+    margin-left: auto;
+    display: block;
 }
 
 .sk-a {
     text-decoration: none;
 }
 
+.sk-right-pad{
+    padding-right: 25px;
+}
+
+.sk-left-pad{
+    padding-left: 25px;
+}
+
 .sk-entry{
     padding-top: 25px;
 }
 
-.sk-desc-pad{
+.sk-left-desc-pad{
     padding-right: 110px;
+    padding-top: 8px;
+}
+
+.sk-right-desc-pad{
+    padding-left: 110px;
     padding-top: 8px;
 }
 
 .sk-detail-pad{
     padding-top: 8px;
 }
+
+.sk-right{
+    text-align: -webkit-right;
+}
+
+.sk-center{
+    text-align: -webkit-center;
+}
+
+
 
 /* ELIAS */
 /* all */
