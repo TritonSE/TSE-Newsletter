@@ -22,15 +22,15 @@ def _greetings(week):
 
     with div() as greeting:
         # Greeting
-        with tr().add(td(cls='ef-td')).add(table(cls='ef-table')).add(tr()).add(td(cls='ef-td ef-greeting')):
+        with tr().add(td(cls='td')).add(table(cls='table')).add(tr()).add(td(cls='td greeting')):
             # First subheader
-            with table(cls='ef-table ef-center').add(tr()).add(td(cls='ef-td')):
+            with table(cls='table').add(tr()).add(td(cls='td')):
                 # Changes according to argument week
                 h2(week)
             # Horizontal line
-            hr(cls='sk-horizontal')
+            hr(cls='horiz')
             # Second subheader
-            with table(cls='ef-table ef-center').add(tr()).add(td(cls='ef-td')):
+            with table(cls='table').add(tr()).add(td(cls='td')):
                 h3('Here are some things to get excited about!')
 
     return greeting
