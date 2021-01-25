@@ -9,6 +9,7 @@ from bodylineleft import _bodylineleft
 from bodylineright import _bodylineright
 from bodynoline import _bodynoline
 from foot import _foot
+from entry_objects import *
 
 # create a document titled 'TSE Newsletter'
 doc = dominate.document(title='TSE Newsletter')
@@ -19,14 +20,21 @@ with doc.head:
 
 # create the document body
 with doc:
+    alumni_desc = ["Harvard Business School MBA Candidate", "Formerly Salesforce Software Engineer", "UCSD Class of 2017 - Co-Founder of TSE"]
     # enclose all of the elements within div elements (currently set to ef-styling)
-    with div(cls='ef-wrapper').add(div(cls='ef-container')).add(div(cls='ef-table ef-outer')):
-        _head()
-        _greetings()
-        _bodylineleft()
-        _bodylineright()
-        _bodynoline()
-        _foot()
+    with div(cls='sk-wrapper').add(div(cls='sk-webkit')).add(table(cls='sk-table sk-outer sk-height')):
+        with tr().add(td(cls="sk-td")):
+            _head()
+        with tr().add(td(cls="sk-td")):
+            _greetings()
+        with tr().add(td(cls="sk-td")):
+            _bodylineleft()
+        with tr().add(td(cls="sk-td")):
+            _bodylineright()
+        with tr().add(td(cls="sk-td")):
+            _bodynoline("ALUMNI ADVICE", [AlumniAdvice("Aaron Yang", alumni_desc)])
+        with tr().add(td(cls="sk-td")):
+            _foot()
 
 # write out final output to newsletter.html
 with open('newsletter.html', 'w') as out_file:

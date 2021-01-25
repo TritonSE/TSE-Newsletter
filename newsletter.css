@@ -54,6 +54,10 @@
     height: 100%;
 }
 
+.sk-title-div {
+    display: inline-block;
+}
+
 .sk-section-title {
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -109,9 +113,9 @@
 }
 
 .sk-horiz { 
-    border: .09375em solid #FFD807; 
-    color: #FFD807; 
+    border: .09375em solid #FFD807;
     background-color: #FFD807;
+    color: #FFD807;
     width: 100%;
     margin-top: .5em;
     margin-bottom: 0em;
@@ -192,6 +196,9 @@
     text-align: -webkit-center;
 }
 
+.sk-test{
+    display: inline;
+}
 
 
 /* ELIAS */
