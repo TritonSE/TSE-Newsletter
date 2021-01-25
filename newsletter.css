@@ -47,8 +47,8 @@ body {
     text-decoration: none;
 }
 
-/* Shravan */
 
+/* Shravan */
 .sk-td {
     vertical-align: top;
 }
@@ -203,12 +203,13 @@ body {
 
 
 /* ELIAS */
-/* all */
-
-
 /* header.html */
 .header {
     margin-top: 3.125em;
+}
+
+.header .padding {
+    padding: 15px;
 }
 
 .logo {
@@ -223,16 +224,16 @@ body {
     vertical-align: middle;
 }
 
-.logo .columnLogo {
+.columnLogo {
     max-width: 80px;
 }
 
-.logo .columnTitle {
+.columnTitle {
     max-width: 440px;
 }
 
-.header .padding {
-    padding: 15px;
+.columnTitle .padding {
+    padding: 0 25px;
 }
 
 .logo h1 {
@@ -243,7 +244,6 @@ body {
     font-size: 24px;
     letter-spacing: 0.02em;
     text-align: center;
-    margin: 0 auto;
 }
 
 .lightbulb {
@@ -260,15 +260,15 @@ body {
     text-align: center;
 }
 
-.social .columnLeft {
-    max-width: 150px;
+.columnLeft {
+    max-width: 140px;
 }
 
-.social .columnRight {
-    max-width: 268px;
+.columnRight {
+    max-width: 250px;
 }
 
-.social .icon {
+.icon {
     width: 30;
     max-width: 30px;
 }
