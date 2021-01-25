@@ -10,6 +10,10 @@ from bodylineright import _bodylineright
 from bodynoline import _bodynoline
 from foot import _foot
 
+# USER VARIABLES
+# week number
+week = 'HAPPY WEEK 7 EVERYONE'
+
 # create a document titled 'TSE Newsletter'
 doc = dominate.document(title='TSE Newsletter')
 
@@ -22,7 +26,7 @@ with doc:
     # enclose all of the elements within div elements (currently set to ef-styling)
     with div(cls='ef-wrapper').add(div(cls='ef-container')).add(table(cls='ef-table ef-outer')):
         _head()
-        _greetings()
+        _greetings(week)
         # _bodylineleft()
         # _bodylineright()
         # _bodynoline()

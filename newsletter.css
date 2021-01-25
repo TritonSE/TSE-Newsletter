@@ -1,8 +1,7 @@
 /* use <link rel="stylesheet" href="mystyle.css"> */
 /* three sizes, Mobile: < 768px Tablet: < 1023px Desktop: > 1023px */
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* Combined ef-body with sk-body */
 body {
@@ -67,7 +66,7 @@ body {
 }
 
 .sk-title {
-    font-family: Rubik, sans-serif;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1.25em;
@@ -78,7 +77,7 @@ body {
 }
 
 .sk-details {
-    font-family: Rubik, sans-serif;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: .8125em;
@@ -89,7 +88,7 @@ body {
 }
 
 .sk-description {
-    font-family: Rubik, sans-serif;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 1.0625em;
@@ -199,6 +198,7 @@ body {
 /* all */
 .ef-table {
     border-spacing: 0;
+    width: 100%;
 }
 
 .ef-td {
@@ -215,9 +215,9 @@ body {
     background-color: #0C2B35;
 }
 
-.ef-webkit {
+.ef-container {
     max-width: 37.5em;
-
+    margin: 0 auto;
 }
 
 .ef-outer {
@@ -234,6 +234,10 @@ body {
 }
 
 /* header.html */
+
+.ef-header {
+    margin-top: 3.125em;
+}
 
 .ef-logo {
     background-color: #153641;
@@ -259,9 +263,9 @@ body {
     padding: 15px;
 }
 
-.ef-logo .ef-title {
+.ef-logo h1 {
     color: #FCF6E5;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -273,6 +277,10 @@ body {
 .ef-lightbulb {
     width: 50;
     max-width: 50px;
+}
+
+.ef-socials {
+    margin-top: 1.25em;
 }
 
 .ef-social {
@@ -293,9 +301,9 @@ body {
     max-width: 30px;
 }
 
-.ef-social .ef-com {
+.ef-social p {
     color: #8B9BA0;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -311,6 +319,10 @@ body {
     text-align: center;
 }
 
+.ef-center {
+    margin: 0 auto;
+}
+
 .ef-greeting .sk-horizontal {
     border: .1em solid #FFD807; 
     width: 5.5em;
@@ -318,9 +330,9 @@ body {
     margin: 0.3em auto;
 }
 
-.ef-welcome {
+.ef-greeting h2 {
     color: #FCF6E5;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 22.75px;
@@ -328,9 +340,9 @@ body {
     text-align: center;
 }
 
-.ef-announcement {
+.ef-greeting h3 {
     color: #FCF6E5;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 19px;
@@ -369,7 +381,7 @@ body {
         padding: 2px;
     }
 
-    .ef-logo .ef-title {
+    .ef-logo h1 {
         font-size: 12px !important;
     }
 
@@ -391,7 +403,7 @@ body {
         max-width: 12px !important;
     }
 
-    .ef-social .ef-com {
+    .ef-social p {
         font-size: 8px !important;
         margin-left: 3px !important;
     }
@@ -400,11 +412,11 @@ body {
         width: 2.25em !important;
     }
 
-    .ef-welcome {
+    .ef-greeting h2 {
         font-size: 12px !important;
     }
     
-    .ef-announcement {
+    .ef-greeting h3 {
         font-size: 9px !important;
     }
 

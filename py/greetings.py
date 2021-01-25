@@ -2,14 +2,14 @@ import html
 import dominate
 from dominate.tags import *
 
-def _greetings():
+def _greetings(week):
     """This function generates a greetings section below the header using table elements and returns it as HTML. 
-    The greetings consists of two subheaders separated by a horizontal line. The first subheader prints, "HAPPY WEEK # EVERYONE"
-    and the second subheader prints, "Here are some things to get excited about!". The horizontal line in the middle is a bordered
-    yellow div. The only part of this section that should be edited is the week number (indicated with a comment in the code below).
+    The greetings consists of two subheaders separated by a horizontal line. The first subheader prints the function argument,
+    which will most likely be "HAPPY WEEK # EVERYONE" and the second subheader prints, "Here are some things to get excited about!".
+    The horizontal line in the middle is a bordered yellow div.
 
     Args:
-        None
+        week: A string containing the current week number.
 
     Returns:
         An HTML document object containing the newsletter's greetings. The greetings consists of two table elements within 
@@ -25,8 +25,8 @@ def _greetings():
         with tr().add(td(cls='ef-td')).add(table(cls='ef-table')).add(tr()).add(td(cls='ef-td ef-greeting')):
             # First subheader
             with table(cls='ef-table ef-center').add(tr()).add(td(cls='ef-td')):
-                # Edit # according to week
-                h2('HAPPY WEEK 7 EVERYONE!')
+                # Changes according to argument week
+                h2(week)
             # Horizontal line
             hr(cls='sk-horizontal')
             # Second subheader
