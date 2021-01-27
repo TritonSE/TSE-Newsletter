@@ -4,7 +4,7 @@ class Entry:
     This class is used to represent a single entry which consists of a title and a description.
     Attributes:
     1. title (string) - The title of the entry.
-    2. body (list of line, text or image objects) - Each element in the list represents a new line.
+    2. body (list of Line, Text or Image objects) - Each element in the list represents a new line.
     """
     def __init__(self, title, body):
         self.title = title
@@ -16,7 +16,7 @@ class DetailedEntry(Entry):
     A detailed entry includes the title of the event, details regarding logistics,
     and a description of the event.
     Attributes:
-    1. details (list of link or text objects) - Each element in the list represents a new detail regarding the event.
+    1. details (list of Link or Text objects) - Each element in the list represents a new detail regarding the event.
     """
     def __init__(self, title, details, body):
         super().__init__(title, body)

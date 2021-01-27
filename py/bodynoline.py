@@ -7,7 +7,8 @@ def _bodynoline(title, entries):
     TODO: A description here, according to Google's Python style guide https://github.com/google/styleguide/blob/gh-pages/pyguide.md#38-comments-and-docstrings
 
     Args:
-        TODO
+        title (string) - The title of the newsletter section.
+        entries (list of Entry objects) - A list of entries under the newsletter section.
 
     Returns:
         TODO
