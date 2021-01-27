@@ -5,8 +5,8 @@ from dominate.tags import *
 def _greetings(greet_title, greet_sub = 'Here are some things to get excited about!'):
     """This function generates a greetings section below the header using table elements and returns it as HTML. 
     The greetings consists of a title and subtitle separated by a horizontal line. The title is the first function argument,
-    which will print as an h2 and most likely be 'HAPPY WEEK # EVERYONE', and the subtitle is the second function argument, which will
-    print as an h3 with default value, 'Here are some things to get excited about!'. The horizontal line in the middle is a bordered
+    which will be printed as a heading 2. The subtitle is the second function argument, which will be printed as a heading 3.
+    The subtitle has a default value of 'Here are some things to get excited about!'. The horizontal line in the middle is a bordered
     yellow horizontal rule.
 
     Args:

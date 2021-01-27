@@ -13,6 +13,7 @@ from foot import _foot
 # USER VARIABLES
 # greetings
 greet_title = 'HAPPY WEEK 7 EVERYONE'
+greet_sub = 'Here are some things to get excited about!'
 
 # create a document titled 'TSE Newsletter'
 doc = dominate.document(title='TSE Newsletter')
@@ -27,10 +28,10 @@ with doc:
     with div(cls='wrapper').add(div(cls='container')).add(table(cls='table outer')):
         _head()
         _greetings(greet_title)
-        # _bodylineleft()
-        # _bodylineright()
-        # _bodynoline()
-        # _foot()
+        _bodylineleft()
+        _bodylineright()
+        _bodynoline()
+        _foot()
 
 # write out final output to newsletter.html
 with open('newsletter.html', 'w') as out_file:
