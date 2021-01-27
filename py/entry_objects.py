@@ -1,44 +1,50 @@
-class UpcomingEvent:
-    """
-    Represents one entry of an upcoming event
-    Attributes:
-    1. title (string) - The title of the event
-    2. details (array of link or text objects) - Each element in the array represents a new line
-    3. body (array of line or text objects) - Each element in the array represents a new line
-    """
-    def __init__(self, title, details, body):
-        self.title = title
-        self.details = details
-        self.body = body
-    
 class Entry:
     """
-    Represents one entry of all other sections other than upcoming events
+    Each section on the newsletter, such as upcoming events and milestones, can have multiple entries.
+    This class is used to represent a single entry which consists of a title and a description.
     Attributes:
     1. title (string) - The title of the entry
-    2. body (array of line, text or image objects) - Each element in the array represents a new line
+    2. body (list of line, text or image objects) - Each element in the list represents a new line
     """
     def __init__(self, title, body):
         self.title = title
         self.body = body
 
+class UpcomingEvent(Entry):
+    """
+    Inherits from Entry class and represents one upcoming event entry.
+    An upcoming event entry includes the title of the event, details regarding logistics,
+    and a description of the event.
+    Attributes:
+    1. details (list of link or text objects) - Each element in the list represents a new detail regarding the event.
+    """
+    def __init__(self, title, details, body):
+        super().__init__(title, body)
+        self.details = details
+    
 class Milestones(Entry):
     """
     Inherits from Entry class and represents one milestone entry.
+    A milestone entry includes the title of the milestone as well as a description regarding 
+    the milestone.
     """
     def __init__(self, title, body):
         super().__init__(title, body)
 
 class ExecUpdates(Entry):
     """
-    Inherits from Entry class and represents one milestone entry.
+    Inherits from Entry class and represents one executive board updates entry.
+    An executive board updates entry includes the title of an update given from the 
+    executive board as well a description for the update.
     """
     def __init__(self, title, body):
         super().__init__(title, body)
 
 class AlumniAdvice(Entry):
     """
-    Inherits from Entry class and represents one milestone entry.
+    Inherits from Entry class and represents an alumni advice entry.
+    An alumni advice entry includes the name of the alumni as the title and their
+    quote and image as the body.
     """
     def __init__(self, title, body):
         super().__init__(title, body)
@@ -47,12 +53,10 @@ class Text:
     """
     Represents a portion of text of an entry's body.
     Attributes:
-    1. text (string) - The actual text that needs to be displayed
-    2. linebreaks (integer) - The number of empty lines that needs to follow the text
+    1. text (string) - The actual text that needs to be displayed.
     """
-    def __init__(self, text, linebreaks):
+    def __init__(self, text):
         self.text = text
-        self.linebreaks = linebreaks
 
 class Link(Text):
     """
@@ -61,15 +65,27 @@ class Link(Text):
     Attributes:
     1. url (string) - The url that the text is being mapped to.
     """
-    def __init__(self, text, url, linebreaks):
-        super().__init__(text, linebreaks)
+    def __init__(self, text, url):
+        super().__init__(text)
         self.url = url
 
 class Image:
     """
-    Represents an image
+    Represents an image to be displayed.
     Attributes:
     1. url (string) - The url of the image to be displayed.
+    2. alt (string) - Alternative text to be displayed if the image is not rendered.
     """
     def __init__(self, url):
         self.url = url
+
+class Linebreaks:
+    """
+    Represents linebreaks within the body of an entry.
+    Placed between Text or Image objects within a list for an entry's body to create 
+    whitelines between bodies of text and images.
+    Attributes:
+    1. numBreaks - The number of extra lines to be added.
+    """
+    def __init__(self, numBreaks):
+        self.numBreaks = numBreaks

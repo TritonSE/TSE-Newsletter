@@ -20,7 +20,6 @@ with doc.head:
 
 # create the document body
 with doc:
-    alumni_desc = ["Harvard Business School MBA Candidate", "Formerly Salesforce Software Engineer", "UCSD Class of 2017 - Co-Founder of TSE"]
     # enclose all of the elements within div elements (currently set to ef-styling)
     with div(cls='sk-wrapper').add(div(cls='sk-webkit')).add(table(cls='sk-table sk-outer sk-height')):
         with tr().add(td(cls="sk-td")):
@@ -32,7 +31,7 @@ with doc:
         with tr().add(td(cls="sk-td")):
             _bodylineright()
         with tr().add(td(cls="sk-td")):
-            _bodynoline("ALUMNI ADVICE", [AlumniAdvice("Aaron Yang", alumni_desc)])
+            _bodynoline()
         with tr().add(td(cls="sk-td")):
             _foot()
 
