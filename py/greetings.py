@@ -1,4 +1,3 @@
-import html
 import dominate
 from dominate.tags import *
 
