@@ -2,14 +2,16 @@ import html
 import dominate
 from dominate.tags import *
 
-def _greetings(week):
+def _greetings(greet_title, greet_sub = 'Here are some things to get excited about!'):
     """This function generates a greetings section below the header using table elements and returns it as HTML. 
-    The greetings consists of two subheaders separated by a horizontal line. The first subheader prints the function argument,
-    which will most likely be "HAPPY WEEK # EVERYONE" and the second subheader prints, "Here are some things to get excited about!".
-    The horizontal line in the middle is a bordered yellow div.
+    The greetings consists of a title and subtitle separated by a horizontal line. The title is the first function argument,
+    which will print as an h2 and most likely be 'HAPPY WEEK # EVERYONE', and the subtitle is the second function argument, which will
+    print as an h3 with default value, 'Here are some things to get excited about!'. The horizontal line in the middle is a bordered
+    yellow horizontal rule.
 
     Args:
-        week: A string containing the current week number.
+        greet_title: A string containing the greetings title. (Ex. 'HAPPY WEEK 7 EVERYONE')
+        greet_sub: A string containing the greetings subtitle with default value 'Here are some things to get excited about!'.
 
     Returns:
         An HTML document object containing the newsletter's greetings. The greetings consists of two table elements within 
@@ -23,14 +25,14 @@ def _greetings(week):
     with div() as greeting:
         # Greeting
         with tr().add(td(cls='td')).add(table(cls='table')).add(tr()).add(td(cls='td greeting')):
-            # First subheader
+            # Title
             with table(cls='table').add(tr()).add(td(cls='td')):
                 # Changes according to argument week
-                h2(week)
-            # Horizontal line
+                h2(greet_title)
+            # Horizontal rule
             hr(cls='horiz')
-            # Second subheader
+            # Subtitle
             with table(cls='table').add(tr()).add(td(cls='td')):
-                h3('Here are some things to get excited about!')
+                h3(greet_sub)
 
     return greeting
