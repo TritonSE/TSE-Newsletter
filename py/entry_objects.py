@@ -76,8 +76,9 @@ class Image:
     1. url (string) - The url of the image to be displayed.
     2. alt (string) - Alternative text to be displayed if the image is not rendered.
     """
-    def __init__(self, url):
+    def __init__(self, url, alt):
         self.url = url
+        self.alt = alt
 
 class Linebreaks:
     """
