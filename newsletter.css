@@ -3,11 +3,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* Combined ef-body with sk-body */
+/* Combined */
 body {
     margin: 0;
     padding: 0;
     background-color: white;
+}
+
+table {
+    border-spacing: 0;
+    width: 100%;
+}
+
+td {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 .wrapper {
@@ -34,17 +47,13 @@ body {
     padding-bottom: 50px;
 }
 
-.table {
-    border-spacing: 0;
+.horiz { 
+    border: .09375em solid #FFD807; 
+    color: #FFD807; 
+    background-color: #FFD807;
     width: 100%;
-}
-
-.td {
-    padding: 0;
-}
-
-.a {
-    text-decoration: none;
+    margin-top: .5em;
+    margin-bottom: 0em;
 }
 
 
@@ -118,15 +127,6 @@ body {
 .sk-left-line-pad {
     padding-left: 1.875em;
     padding-top: 3.75em;
-}
-
-.horiz { 
-    border: .09375em solid #FFD807; 
-    color: #FFD807; 
-    background-color: #FFD807;
-    width: 100%;
-    margin-top: .5em;
-    margin-bottom: 0em;
 }
 
 .sk-vertical-left {

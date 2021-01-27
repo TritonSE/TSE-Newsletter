@@ -24,15 +24,15 @@ def _greetings(greet_title, greet_sub = 'Here are some things to get excited abo
 
     with div() as greeting:
         # Greeting
-        with tr().add(td(cls='td')).add(table(cls='table')).add(tr()).add(td(cls='td greeting')):
+        with tr().add(td()).add(table()).add(tr()).add(td(cls='greeting')):
             # Title
-            with table(cls='table').add(tr()).add(td(cls='td')):
+            with table().add(tr()).add(td()):
                 # Changes according to argument week
                 h2(greet_title)
             # Horizontal rule
             hr(cls='horiz')
             # Subtitle
-            with table(cls='table').add(tr()).add(td(cls='td')):
+            with table().add(tr()).add(td()):
                 h3(greet_sub)
 
     return greeting

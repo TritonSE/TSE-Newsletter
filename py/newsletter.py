@@ -13,7 +13,6 @@ from foot import _foot
 # USER VARIABLES
 # greetings
 greet_title = 'HAPPY WEEK 7 EVERYONE'
-greet_sub = 'Here are some things to get excited about!'
 
 # create a document titled 'TSE Newsletter'
 doc = dominate.document(title='TSE Newsletter')
