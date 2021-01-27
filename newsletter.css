@@ -1,25 +1,40 @@
 /* use <link rel="stylesheet" href="mystyle.css"> */
 /* three sizes, Mobile: < 768px Tablet: < 1023px Desktop: > 1023px */
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.sk-body {
+/* Combined */
+body {
     margin: 0;
     padding: 0;
     background-color: white;
 }
 
-.sk-wrapper {
+table {
+    border-spacing: 0;
+    width: 100%;
+}
+
+td {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
     width: 100%;
     table-layout: fixed;
     background-color: #0C2B35;
 }
-.sk-webkit {
+
+.container {
     max-width: 600px;
     margin: 0 auto;
 }
-.sk-outer {
+
+.outer {
     margin: 0 auto;
     width: 100%;
     max-width: 600px;
@@ -31,13 +46,19 @@
 
     padding-bottom: 50px;
 }
-.sk-table {
-    border-spacing: 0;
+
+.horiz { 
+    border: .09375em solid #FFD807; 
+    color: #FFD807; 
+    background-color: #FFD807;
     width: 100%;
+    margin-top: .5em;
+    margin-bottom: 0em;
 }
 
+
+/* Shravan */
 .sk-td {
-    padding: 0;
     vertical-align: top;
 }
 
@@ -66,7 +87,7 @@
 }
 
 .sk-title {
-    font-family: Rubik, sans-serif;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1.25em;
@@ -77,7 +98,7 @@
 }
 
 .sk-details {
-    font-family: Rubik, sans-serif;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: .8125em;
@@ -88,7 +109,7 @@
 }
 
 .sk-description {
-    font-family: Rubik, sans-serif;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 1.0625em;
@@ -107,15 +128,6 @@
     padding-left: 1.875em;
     padding-top: 3.75em;
 }
-
-.sk-horiz { 
-    border: .09375em solid #FFD807; 
-    color: #FFD807; 
-    background-color: #FFD807;
-    width: 100%;
-    margin-top: .5em;
-    margin-bottom: 0em;
-} 
 
 .sk-vertical-left {
     height: 100%;
@@ -142,10 +154,6 @@
     margin-right: 0em;
     margin-left: auto;
     display: block;
-}
-
-.sk-a {
-    text-decoration: none;
 }
 
 .sk-right-pad{
@@ -195,222 +203,194 @@
 
 
 /* ELIAS */
-/* all */
-.ef-body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
-
-.ef-table {
-    border-spacing: 0;
-}
-
-.ef-td {
-    padding: 0;
-}
-
-.ef-a {
-    text-decoration: none;
-}
-
-.ef-wrapper {
-    width: 100%;
-    table-layout: fixed;
-    background-color: #0C2B35;
-}
-
-.ef-webkit {
-    max-width: 37.5em;
-
-}
-
-.ef-outer {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 37.5em;
-    border-spacing: 0;
-
-    background-image: url('https://drive.google.com/uc?export=view&id=1dQKwKeUTLuZFi64MaGJNrTLPuv_t4wY1');
-    background-repeat: repeat;
-    background-size: 100%;
-
-    padding-bottom: 3.125em;
-}
-
 /* header.html */
+.header {
+    margin-top: 50px;
+}
 
-.ef-logo {
+.header .padding {
+    padding: 15px;
+}
+
+.logo {
     background-color: #153641;
     font-size: 0;
     text-align: center;
 }
 
-.ef-column {
+.column {
     width: 100%;
     display: inline-block;
     vertical-align: middle;
 }
 
-.ef-logo .ef-columnLogo {
+.columnLogo {
     max-width: 80px;
 }
 
-.ef-logo .ef-columnTitle {
+.columnTitle {
     max-width: 440px;
 }
 
-.ef-padding {
-    padding: 15px;
+.columnTitle .padding {
+    padding: 0 10px;
 }
 
-.ef-logo .ef-title {
+.logo h1 {
     color: #FCF6E5;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 23px;
+    font-size: 26px;
     letter-spacing: 0.02em;
     text-align: center;
-    margin: auto;
 }
 
-.ef-lightbulb {
+.lightbulb {
     width: 50;
     max-width: 50px;
 }
 
-.ef-social {
+.socials {
+    margin-top: 20px;
+}
+
+.social {
     font-size: 0;
     text-align: center;
 }
 
-.ef-social .ef-columnLeft {
-    max-width: 150px;
+.columnLeft {
+    max-width: 140px;
 }
 
-.ef-social .ef-columnRight {
-    max-width: 268px;
+.columnRight {
+    max-width: 250px;
 }
 
-.ef-social .ef-icon {
+.icon {
     width: 30;
     max-width: 30px;
 }
 
-.ef-social .ef-com {
+.social p {
     color: #8B9BA0;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     letter-spacing: 0.02em;
     text-align: center;
 
-    margin-left: 0.625em;
+    margin-left: 10px;
 }
 
 /* greetings.html */
 
-.ef-greeting {
+.greeting {
+    padding-top: 50px;
     text-align: center;
 }
 
-.ef-greeting .sk-horizontal {
+.greeting .horiz {
     border: .1em solid #FFD807; 
     width: 5.5em;
 
     margin: 0.3em auto;
 }
 
-.ef-welcome {
+.greeting h2 {
     color: #FCF6E5;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 22.75px;
+    font-size: 22px;
     letter-spacing: 0.02em;
     text-align: center;
 }
 
-.ef-announcement {
+.greeting h3 {
     color: #FCF6E5;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 19px;
+    font-size: 20px;
     letter-spacing: 0.02em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 15em;
     text-align: center;
 }
 
 /* footer.html */
 
-.ef-footer {
+.footer {
     text-align: center;
 }
 
-.ef-footer .sk-horizontal {
+.footer .horiz {
     border: .1em solid #FFD807; 
     width: 5.5em;
 }
 
-.ef-footer .ef-columnLogo {
+.footer .columnLogo {
     max-width: 80px;
 }
 
+/* for screens less than 600px */
 @media screen and (max-width: 600px) {
-    .ef-logo .ef-columnLogo {
+    .columnLogo {
         max-width: 40px;
     }
 
-    .ef-logo .ef-columnTitle {
+    .columnTitle {
         max-width: 240px;
     }
     
-    .ef-logo .ef-padding {
+    .header .padding {
         padding: 2px;
     }
 
-    .ef-logo .ef-title {
-        font-size: 12px !important;
+    .logo h1 {
+        font-size: 1.625vw !important;
     }
 
-    .ef-lightbulb {
-        width: 32 !important;
-        max-width: 32px !important;
+    .lightbulb {
+        width: 3.125vw !important;
+        max-width: 3.125vw !important;
     }
 
-    .ef-social .ef-columnLeft {
+    .columnLeft {
         max-width: 80px !important;
     }
 
-    .ef-social .ef-columnRight {
+    .columnRight {
         max-width: 140px !important;
     }
 
-    .ef-social .ef-icon {
-        width: 12 !important;
-        max-width: 12px !important;
+    .icon {
+        width: 1.875vw !important;
+        max-width: 1.875vw !important;
     }
 
-    .ef-social .ef-com {
-        font-size: 8px !important;
+    .social p {
+        font-size: 2vw !important;
         margin-left: 3px !important;
     }
 
-    .ef-greeting .sk-horizontal { 
+    .greeting .horiz { 
         width: 2.25em !important;
     }
 
-    .ef-welcome {
-        font-size: 12px !important;
+    .greeting h2 {
+        font-size: 1.375vw !important;
     }
     
-    .ef-announcement {
-        font-size: 9px !important;
+    .greeting h3 {
+        font-size: 1.25vw !important;
     }
 
-    .ef-footer .sk-horizontal {
+    .footer .horiz {
         width: 2.25em !important;
     }
 }

@@ -10,6 +10,10 @@ from bodylineright import _bodylineright
 from bodynoline import _bodynoline
 from foot import _foot
 
+# USER VARIABLES
+# greetings
+greet_title = 'HAPPY WEEK 7 EVERYONE'
+
 # create a document titled 'TSE Newsletter'
 doc = dominate.document(title='TSE Newsletter')
 
@@ -20,9 +24,9 @@ with doc.head:
 # create the document body
 with doc:
     # enclose all of the elements within div elements (currently set to ef-styling)
-    with div(cls='ef-wrapper').add(div(cls='ef-container')).add(div(cls='ef-table ef-outer')):
+    with div(cls='wrapper').add(div(cls='container')).add(table(cls='table outer')):
         _head()
-        _greetings()
+        _greetings(greet_title)
         _bodylineleft()
         _bodylineright()
         _bodynoline()
