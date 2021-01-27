@@ -3,17 +3,17 @@ class Entry:
     Each section on the newsletter, such as upcoming events and milestones, can have multiple entries.
     This class is used to represent a single entry which consists of a title and a description.
     Attributes:
-    1. title (string) - The title of the entry
-    2. body (list of line, text or image objects) - Each element in the list represents a new line
+    1. title (string) - The title of the entry.
+    2. body (list of line, text or image objects) - Each element in the list represents a new line.
     """
     def __init__(self, title, body):
         self.title = title
         self.body = body
 
-class UpcomingEvent(Entry):
+class DetailedEntry(Entry):
     """
-    Inherits from Entry class and represents one upcoming event entry.
-    An upcoming event entry includes the title of the event, details regarding logistics,
+    Inherits from Entry class and represents one detailed entry.
+    A detailed entry includes the title of the event, details regarding logistics,
     and a description of the event.
     Attributes:
     1. details (list of link or text objects) - Each element in the list represents a new detail regarding the event.
@@ -21,33 +21,6 @@ class UpcomingEvent(Entry):
     def __init__(self, title, details, body):
         super().__init__(title, body)
         self.details = details
-    
-class Milestones(Entry):
-    """
-    Inherits from Entry class and represents one milestone entry.
-    A milestone entry includes the title of the milestone as well as a description regarding 
-    the milestone.
-    """
-    def __init__(self, title, body):
-        super().__init__(title, body)
-
-class ExecUpdates(Entry):
-    """
-    Inherits from Entry class and represents one executive board updates entry.
-    An executive board updates entry includes the title of an update given from the 
-    executive board as well a description for the update.
-    """
-    def __init__(self, title, body):
-        super().__init__(title, body)
-
-class AlumniAdvice(Entry):
-    """
-    Inherits from Entry class and represents an alumni advice entry.
-    An alumni advice entry includes the name of the alumni as the title and their
-    quote and image as the body.
-    """
-    def __init__(self, title, body):
-        super().__init__(title, body)
         
 class Text:
     """
