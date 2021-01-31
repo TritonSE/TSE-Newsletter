@@ -4,7 +4,7 @@ class Entry:
     This class is used to represent a single entry which consists of a title and a description.
     Attributes:
     1. title (string) - The title of the entry.
-    2. body (list of Line, Text or Image objects) - Each element in the list represents a new line.
+    2. body (list of Link, Linebreak, Text and Image objects) - Each element in the list is displayed on a new line.
     """
     def __init__(self, title, body):
         self.title = title

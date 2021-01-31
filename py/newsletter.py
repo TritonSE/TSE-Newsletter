@@ -25,18 +25,18 @@ with doc.head:
 # create the document body
 with doc:
     # enclose all of the elements within div elements (currently set to ef-styling)
-    with div(cls='sk-wrapper').add(div(cls='sk-webkit')).add(table(cls='sk-table sk-outer sk-height')):
-        with tr().add(td(cls="sk-td")):
+    with div(cls='wrapper').add(div(cls='container')).add(table(cls='outer height')):
+        with tr().add(td()):
             _head()
-        with tr().add(td(cls="sk-td")):
+        with tr().add(td()):
             _greetings()
-        with tr().add(td(cls="sk-td")):
+        with tr().add(td()):
             _bodylineleft()
-        with tr().add(td(cls="sk-td")):
+        with tr().add(td()):
             _bodylineright()
-        with tr().add(td(cls="sk-td")):
+        with tr().add(td()):
             _bodynoline()
-        with tr().add(td(cls="sk-td")):
+        with tr().add(td()):
             _foot()
 
 # write out final output to newsletter.html
