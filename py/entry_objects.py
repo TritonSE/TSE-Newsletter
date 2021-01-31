@@ -16,7 +16,7 @@ class DetailedEntry(Entry):
     A detailed entry includes the title of the event, details regarding logistics,
     and a description of the event.
     Attributes:
-    1. details (list of Link or Text objects) - Each element in the list represents a new detail regarding the event.
+    1. details (list of Link and Text objects) - Each element in the list represents a new detail regarding the event.
     """
     def __init__(self, title, details, body):
         super().__init__(title, body)
@@ -56,7 +56,7 @@ class Image:
 class Linebreaks:
     """
     Represents linebreaks within the body of an entry.
-    Placed between Text or Image objects within a list for an entry's body to create 
+    Placed between Text and Image objects within a list for an entry's body to create 
     whitelines between bodies of text and images.
     Attributes:
     1. numBreaks - The number of extra lines to be added.
