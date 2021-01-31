@@ -7,8 +7,8 @@ def _bodynoline(title, entries):
     text along with images.
 
     Args:
-        title (string) - The title of the newsletter section.
-        entries (list of Entry objects) - A list of entries under the newsletter section.
+        title (string) - The title of the newsletter section. Ex: "Alumni Advice"
+        entries (list of Entry objects) - A list of entries under the newsletter section. Ex: [Entry("Aaron Yang", [Text("Don't be afraid to be ambitious.")])]
 
     Returns:
         An HTML document object that contains HTML for a centered newsletter section with no vertical line.
