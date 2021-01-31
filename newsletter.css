@@ -71,8 +71,12 @@ a {
     background-color: transparent;
 }
 
-.sk-height{
+.height{
     height: 100%;
+}
+
+.sk-title-div {
+    display: inline-block;
 }
 
 .sk-section-title {
@@ -200,6 +204,9 @@ a {
     text-align: -webkit-center;
 }
 
+.sk-test{
+    display: inline;
+}
 
 
 /* ELIAS */

@@ -9,6 +9,7 @@ from bodylineleft import _bodylineleft
 from bodylineright import _bodylineright
 from bodynoline import _bodynoline
 from foot import _foot
+from entry_objects import *
 
 # USER VARIABLES
 # greetings
@@ -24,13 +25,19 @@ with doc.head:
 # create the document body
 with doc:
     # enclose all of the elements within div elements (currently set to ef-styling)
-    with div(cls='wrapper').add(div(cls='container')).add(table(cls='table outer')):
-        _head()
-        _greetings(greet_title)
-        _bodylineleft()
-        _bodylineright()
-        _bodynoline()
-        _foot()
+    with div(cls='wrapper').add(div(cls='container')).add(table(cls='outer height')):
+        with tr().add(td()):
+            _head()
+        with tr().add(td()):
+            _greetings()
+        with tr().add(td()):
+            _bodylineleft()
+        with tr().add(td()):
+            _bodylineright()
+        with tr().add(td()):
+            _bodynoline()
+        with tr().add(td()):
+            _foot()
 
 # write out final output to newsletter.html
 with open('newsletter.html', 'w') as out_file:
