@@ -1,19 +1,37 @@
 import dominate
 from dominate.tags import *
 
-def _greetings():
-    """Returns the generated HTML greetings. TODO: edit this description
-
-    TODO: A description here, according to Google's Python style guide https://github.com/google/styleguide/blob/gh-pages/pyguide.md#38-comments-and-docstrings
+def _greetings(greet_title, greet_sub = 'Here are some things to get excited about!'):
+    """This function generates a greetings section below the header using table elements and returns it as HTML. 
+    The greetings consists of a title and subtitle separated by a horizontal line. The title is the first function argument,
+    which will be printed as a heading 2. The subtitle is the second function argument, which will be printed as a heading 3.
+    The subtitle has a default value of 'Here are some things to get excited about!'. The horizontal line in the middle is a bordered
+    yellow horizontal rule.
 
     Args:
-        TODO
+        greet_title: A string containing the greetings title. (Ex. 'HAPPY WEEK 7 EVERYONE')
+        greet_sub: A string containing the greetings subtitle with default value 'Here are some things to get excited about!'.
 
     Returns:
-        TODO
+        An HTML document object containing the newsletter's greetings. The greetings consists of two table elements within 
+        a single table row. Each of the two rows contains the messages described above and the rows are separated by the horizontal
+        line div.
 
     Raises:
-        TODO
+        None
     """
 
-    return h2('This is the greetings.')
+    with div() as greeting:
+        # Greeting
+        with tr().add(td()).add(table()).add(tr()).add(td(cls='greeting')):
+            # Title
+            with table().add(tr()).add(td()):
+                # Changes according to argument week
+                h2(greet_title)
+            # Horizontal rule
+            hr(cls='horiz')
+            # Subtitle
+            with table().add(tr()).add(td()):
+                h3(greet_sub)
+
+    return greeting

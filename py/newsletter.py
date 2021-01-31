@@ -11,6 +11,10 @@ from bodynoline import _bodynoline
 from foot import _foot
 from entry_objects import *
 
+# USER VARIABLES
+# greetings
+greet_title = 'HAPPY WEEK 7 EVERYONE'
+
 # create a document titled 'TSE Newsletter'
 doc = dominate.document(title='TSE Newsletter')
 
