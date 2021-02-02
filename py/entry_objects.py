@@ -21,6 +21,14 @@ class DetailedEntry(Entry):
     def __init__(self, title, details, body):
         super().__init__(title, body)
         self.details = details
+
+class Description():
+    def __init__(self, desc):
+        self.desc = desc
+
+class Details():
+    def __init__(self, details):
+        self.details = details 
         
 class Text:
     """
