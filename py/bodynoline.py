@@ -16,7 +16,7 @@ def _bodynoline(title, entries):
         The HTML consists of tables to orient each entry within the section.
 
     Raises:
-        None
+        TypeError - If the object type of elements within the entry aren't acceptable types.
     """
     with table() as bodynoline:
         with tr().add(td(cls="td-valign center")).add(div(cls="title-div")):
@@ -38,7 +38,7 @@ def _bodynoline(title, entries):
                 #Iterates through the body to generate HTML depending on if text or an image
                 #needs to be displayed.
                 for elem in entry.body:
-                    if isinstance(elem, Description):
+                    if isinstance(elem, Content):
                         with tr().add(td(cls="td-valign center-desc-pad")):
                             #For every element in the description, HTML is dependent on if it represents
                             #plain text, linebreaks, or a link.
@@ -52,11 +52,11 @@ def _bodynoline(title, entries):
                                     with p(cls="description center").add(u()):
                                         a(line.text, cls="link", href=line.url, target="_blank")
                                 else:
-                                    raise TypeError("Elements of Description object must be Text, Link, or Linebreak objects")
+                                    raise TypeError("Elements of Content object must be Text, Link, or Linebreak objects")
                     #If the element is an Image, renders the image or displays the alt
                     elif isinstance(elem, Image):
                         with tr().add(td(cls="td-valign entry")):
                             img(src=elem.url, cls="img-center", alt=elem.alt)
                     else:
-                        raise TypeError("Elements of body must be either Description or Image objects")
+                        raise TypeError("Elements of body must be either Content or Image objects")
     return bodynoline

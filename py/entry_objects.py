@@ -1,44 +1,25 @@
 class Entry:
     """
     Each section on the newsletter, such as upcoming events and milestones, can have multiple entries.
-    This class is used to represent a single entry which consists of a title and a description.
+    This class is used to represent a single entry which consists of a title, a description, and details regarding logistics.
     Attributes:
     1. title (string) - The title of the entry.
-    2. body (list of Description and Image objects) - Each element in the list is displayed on a new line.
+    2. body (list of Content and Image objects) - Each element in the list is displayed on a new line.
+    3. details (list of Content objects) - Each element in the list represents a new detail regarding the event.
     """
-    def __init__(self, title, body):
+    def __init__(self, title, body, details=None):
         self.title = title
         self.body = body
-
-class DetailedEntry(Entry):
-    """
-    Inherits from Entry class and represents one detailed entry.
-    A detailed entry includes the title of the event, details regarding logistics,
-    and a description of the event.
-    Attributes:
-    1. details (list of Details objects) - Each element in the list represents a new detail regarding the event.
-    """
-    def __init__(self, title, details, body):
-        super().__init__(title, body)
         self.details = details
 
-class Description():
+class Content:
     """
-    Represents a block of text related to an entry's description.
+    Represents a block of text within an entry's body and details.
     Attributes:
-    1. desc (list of Text, Link, and Linebreaks objects) - Each element in the list represents one part of the description.
+    1. desc (list of Text, Link, and Linebreaks objects) - Each element in the list represents one aspect of the details/body.
     """
     def __init__(self, desc):
-        self.desc = desc
-
-class Details():
-    """
-    Represents a block of text related to an entry's details.
-    Attributes:
-    1. details (list of Text, Link, and Linebreaks objects) - Each element in the list represents one detail
-    """
-    def __init__(self, details):
-        self.details = details 
+        self.desc = desc 
 
 class Image:
     """
