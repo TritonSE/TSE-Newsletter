@@ -52,7 +52,7 @@ class Link(Text):
         super().__init__(text)
         self.url = url
 
-class Linebreaks:
+class Linebreak:
     """
     Represents linebreaks within the body of an entry.
     Placed between Text and Image objects within a list for an entry's body to create 

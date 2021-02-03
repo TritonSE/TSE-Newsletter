@@ -16,26 +16,30 @@ def _bodynoline(title, entries):
         The HTML consists of tables to orient each entry within the section.
 
     Raises:
-        TypeError - If the object type of elements within the entry aren't acceptable types.
+        TypeError -
+            1. If the title is not a string.
+            2. If the elements of body are not Content or Image objects.
+            3. If the elements of Content are not Text, Link, or Linebreak objects.
     """
     with table() as bodynoline:
         with tr().add(td(cls="td-valign center")).add(div(cls="title-div")):
-            h1(title, cls="section-title center")
-            hr(cls="horiz")
+            if isinstance(title, str):
+                h1(title, cls="section-title center")
+                hr(cls="horiz")
+            else:
+                raise TypeError("Title must be a string.")
         for i in range(len(entries)):
             entry = entries[i]
             #Adjusts padding for the first entry of the section.
-            entry_class = "td-valign"
-            if(i == 0):
-                entry_class += " first-entry"
-            else:
-                entry_class += " entry"
+            entry_class = "td-valign entry"
+            if i == 0:
+                entry_class = "td_valign first-entry"
             #Creates table for the entry.
             with tr().add(td(cls=entry_class)).add(table()):
                 #Generates the title for the entry.
                 with tr().add(td(cls="td-valign")):
                     h2(entry.title, cls="title center")
-                #Iterates through the body to generate HTML depending on if text or an image
+                #Iterates through the body to generate HTML depending on if text or an image.
                 #needs to be displayed.
                 for elem in entry.body:
                     if isinstance(elem, Content):
@@ -45,7 +49,7 @@ def _bodynoline(title, entries):
                             for line in elem.desc:
                                 if isinstance(line, Text):
                                     p(line.text, cls="description center")
-                                elif isinstance(line, Linebreaks):
+                                elif isinstance(line, Linebreak):
                                     for i in range(line.numBreaks):
                                         br()
                                 elif isinstance(line, Link):
@@ -53,7 +57,7 @@ def _bodynoline(title, entries):
                                         a(line.text, cls="link", href=line.url, target="_blank")
                                 else:
                                     raise TypeError("Elements of Content object must be Text, Link, or Linebreak objects")
-                    #If the element is an Image, renders the image or displays the alt
+                    #If the element is an Image, renders the image or displays the alt.
                     elif isinstance(elem, Image):
                         with tr().add(td(cls="td-valign entry")):
                             img(src=elem.url, cls="img-center", alt=elem.alt)
