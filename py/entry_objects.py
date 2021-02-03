@@ -4,7 +4,7 @@ class Entry:
     This class is used to represent a single entry which consists of a title and a description.
     Attributes:
     1. title (string) - The title of the entry.
-    2. body (list of Link, Linebreak, Text and Image objects) - Each element in the list is displayed on a new line.
+    2. body (list of Description and Image objects) - Each element in the list is displayed on a new line.
     """
     def __init__(self, title, body):
         self.title = title
@@ -16,19 +16,40 @@ class DetailedEntry(Entry):
     A detailed entry includes the title of the event, details regarding logistics,
     and a description of the event.
     Attributes:
-    1. details (list of Link and Text objects) - Each element in the list represents a new detail regarding the event.
+    1. details (list of Details objects) - Each element in the list represents a new detail regarding the event.
     """
     def __init__(self, title, details, body):
         super().__init__(title, body)
         self.details = details
 
 class Description():
+    """
+    Represents a block of text related to an entry's description.
+    Attributes:
+    1. desc (list of Text, Link, and Linebreaks objects) - Each element in the list represents one part of the description.
+    """
     def __init__(self, desc):
         self.desc = desc
 
 class Details():
+    """
+    Represents a block of text related to an entry's details.
+    Attributes:
+    1. details (list of Text, Link, and Linebreaks objects) - Each element in the list represents one detail
+    """
     def __init__(self, details):
         self.details = details 
+
+class Image:
+    """
+    Represents an image to be displayed.
+    Attributes:
+    1. url (string) - The url of the image to be displayed.
+    2. alt (string) - Alternative text to be displayed if the image is not rendered.
+    """
+    def __init__(self, url, alt):
+        self.url = url
+        self.alt = alt
         
 class Text:
     """
@@ -49,17 +70,6 @@ class Link(Text):
     def __init__(self, text, url):
         super().__init__(text)
         self.url = url
-
-class Image:
-    """
-    Represents an image to be displayed.
-    Attributes:
-    1. url (string) - The url of the image to be displayed.
-    2. alt (string) - Alternative text to be displayed if the image is not rendered.
-    """
-    def __init__(self, url, alt):
-        self.url = url
-        self.alt = alt
 
 class Linebreaks:
     """

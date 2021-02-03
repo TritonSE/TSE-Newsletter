@@ -2,3 +2,4 @@
 *.pyc
 .vscode
 newsletter.html
+test_vars.py

@@ -19,43 +19,44 @@ def _bodynoline(title, entries):
         None
     """
     with table() as bodynoline:
-        with tr().add(td(cls="sk-td sk-center")).add(div(cls="sk-title-div")):
-            h1(title, cls="sk-section-title sk-center")
+        with tr().add(td(cls="td-valign center")).add(div(cls="title-div")):
+            h1(title, cls="section-title center")
             hr(cls="horiz")
         for i in range(len(entries)):
             entry = entries[i]
             #Adjusts padding for the first entry of the section.
+            entry_class = "td-valign"
             if(i == 0):
-                entry_class = "sk-td sk-first-entry"
+                entry_class += " first-entry"
             else:
-                entry_class = "sk-td"
+                entry_class += " entry"
             #Creates table for the entry.
             with tr().add(td(cls=entry_class)).add(table()):
                 #Generates the title for the entry.
-                with tr().add(td(cls="sk-td")):
-                    h2(entry.title, cls="sk-title sk-center")
+                with tr().add(td(cls="td-valign")):
+                    h2(entry.title, cls="title center")
                 #Iterates through the body to generate HTML depending on if text or an image
                 #needs to be displayed.
                 for elem in entry.body:
                     if isinstance(elem, Description):
-                        with tr().add(td(cls="sk-td sk-center-desc-pad")):
+                        with tr().add(td(cls="td-valign center-desc-pad")):
                             #For every element in the description, HTML is dependent on if it represents
                             #plain text, linebreaks, or a link.
                             for line in elem.desc:
                                 if isinstance(line, Text):
-                                    p(line.text, cls="sk-description sk-center")
+                                    p(line.text, cls="description center")
                                 elif isinstance(line, Linebreaks):
                                     for i in range(line.numBreaks):
                                         br()
                                 elif isinstance(line, Link):
-                                    with p(cls="sk-description sk-center").add(u()):
+                                    with p(cls="description center").add(u()):
                                         a(line.text, cls="link", href=line.url, target="_blank")
                                 else:
                                     raise TypeError("Elements of Description object must be Text, Link, or Linebreak objects")
-                    #If the element is an Image, 
+                    #If the element is an Image, renders the image or displays the alt
                     elif isinstance(elem, Image):
-                        with tr().add(td(cls="sk-td sk-entry")):
-                            img(src=elem.url, cls="sk-img-center", alt=elem.alt)
+                        with tr().add(td(cls="td-valign entry")):
+                            img(src=elem.url, cls="img-center", alt=elem.alt)
                     else:
                         raise TypeError("Elements of body must be either Description or Image objects")
     return bodynoline
