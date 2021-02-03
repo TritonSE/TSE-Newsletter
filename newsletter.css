@@ -56,13 +56,11 @@ a {
     margin-bottom: 0em;
 }
 
-
-/* Shravan */
-.sk-td {
+.td-valign {
     vertical-align: top;
 }
 
-.sk-section-padding {
+.section-padding {
     padding-top: 1.25em;
 }
 
@@ -75,11 +73,11 @@ a {
     height: 100%;
 }
 
-.sk-title-div {
+.title-div {
     display: inline-block;
 }
 
-.sk-section-title {
+.section-title {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -90,7 +88,7 @@ a {
     margin-bottom: 0em;
 }
 
-.sk-title {
+.title {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -101,7 +99,7 @@ a {
     margin-bottom: 0em;
 }
 
-.sk-details {
+.details {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -112,7 +110,7 @@ a {
     margin-bottom: 0em;
 }
 
-.sk-description {
+.description {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -123,93 +121,87 @@ a {
     margin-bottom: 0em;
 }
 
-.sk-right-line-pad {
+.right-line-pad {
     padding-right: 1.875em;
     padding-top: 3.75em;
 }
 
-.sk-left-line-pad {
+.left-line-pad {
     padding-left: 1.875em;
     padding-top: 3.75em;
 }
 
-.sk-vertical-left {
+.vertical-left {
     height: 100%;
     border-left: .1875em solid #FFD807;
 }
 
-.sk-vertical-right {
+.vertical-right {
     height: 100%;
     border-right: .1875em solid #FFD807;
 }
 
-.sk-img-left {
+.img-left {
     width: 28.125em;
 }
 
-.sk-img-center {
+.img-center {
     width: 75%;
     margin-left: 12.5%;
     margin-right: 12.5%;
 }
 
-.sk-img-right {
+.img-right {
     width: 28.125em;
     margin-right: 0em;
     margin-left: auto;
     display: block;
 }
 
-.sk-right-pad{
+.right-pad{
     padding-right: 1.5625em;
 }
 
-.sk-left-pad{
+.left-pad{
     padding-left: 1.5625em;
 }
 
-.sk-entry{
+.entry{
     padding-top: 1.5625em;
 }
 
-.sk-first-entry{
+.first-entry{
     padding-top: .75em;
 }
 
-.sk-left-desc-pad{
+.left-desc-pad{
     padding-right: 6.875em;
     padding-top: .5em;
 }
 
-.sk-right-desc-pad{
+.right-desc-pad{
     padding-left: 6.875em;
     padding-top: .5em;
 }
 
-.sk-center-desc-pad{
+.center-desc-pad{
     padding-left: 4.375em;
     padding-right: 4.375em;
     padding-top: .5em;
 }
 
-.sk-detail-pad{
+.detail-pad{
     padding-top: .5em;
 }
 
-.sk-right{
+.right{
     text-align: -webkit-right;
 }
 
-.sk-center{
+.center{
     text-align: -webkit-center;
 }
 
-.sk-test{
-    display: inline;
-}
-
-
-/* ELIAS */
 /* header.html */
 .header {
     margin-top: 50px;
