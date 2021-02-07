@@ -202,13 +202,14 @@ a {
     text-align: -webkit-center;
 }
 
+
 /* header.html */
 .header {
     margin-top: 50px;
 }
 
 .header .padding {
-    padding: 15px;
+    padding: 15px 1vw;
 }
 
 .logo {
@@ -224,11 +225,11 @@ a {
 }
 
 .columnLogo {
-    max-width: 80px;
+    max-width: 13%;
 }
 
 .columnTitle {
-    max-width: 440px;
+    max-width: 74%;
 }
 
 .columnTitle .padding {
@@ -246,12 +247,11 @@ a {
 }
 
 .lightbulb {
-    width: 50;
     max-width: 50px;
 }
 
 .socials {
-    margin-top: 20px;
+    margin-top: 1.25vw;
 }
 
 .social {
@@ -260,15 +260,15 @@ a {
 }
 
 .columnLeft {
-    max-width: 140px;
+    max-width: 23%;
 }
 
 .columnRight {
-    max-width: 250px;
+    max-width: 42%;
 }
 
 .icon {
-    width: 30;
+    width: 5vw;
     max-width: 30px;
 }
 
@@ -284,10 +284,10 @@ a {
     margin-left: 10px;
 }
 
-/* greetings.html */
 
+/* greetings.html */
 .greeting {
-    padding-top: 50px;
+    padding-top: 3.125vw;
     text-align: center;
 }
 
@@ -321,8 +321,8 @@ a {
     text-align: center;
 }
 
-/* footer.html */
 
+/* footer.html */
 .footer {
     text-align: center;
 }
@@ -336,60 +336,13 @@ a {
     max-width: 80px;
 }
 
-/* for screens less than 600px */
+/* styling for displays less than 600px */
 @media screen and (max-width: 600px) {
-    .columnLogo {
-        max-width: 40px;
-    }
-
-    .columnTitle {
-        max-width: 240px;
-    }
-    
-    .header .padding {
-        padding: 2px;
-    }
-
     .logo h1 {
-        font-size: 1.625vw !important;
-    }
-
-    .lightbulb {
-        width: 3.125vw !important;
-        max-width: 3.125vw !important;
-    }
-
-    .columnLeft {
-        max-width: 80px !important;
-    }
-
-    .columnRight {
-        max-width: 140px !important;
-    }
-
-    .icon {
-        width: 1.875vw !important;
-        max-width: 1.875vw !important;
+        font-size: 4vw;
     }
 
     .social p {
-        font-size: 2vw !important;
-        margin-left: 3px !important;
-    }
-
-    .greeting .horiz { 
-        width: 2.25em !important;
-    }
-
-    .greeting h2 {
-        font-size: 1.375vw !important;
-    }
-    
-    .greeting h3 {
-        font-size: 1.25vw !important;
-    }
-
-    .footer .horiz {
-        width: 2.25em !important;
+        font-size: 2.5vw;
     }
 }
