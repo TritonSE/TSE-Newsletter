@@ -25,7 +25,7 @@ def _head():
             with table(cls='column columnLogo').add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td()):
                 img(cls='lightbulb', src='https://drive.google.com/uc?export=view&id=1gq2ARk8HOCKw9MBrUfrEYe3GJjHGyBta')
             # TSE
-            with table(cls='column columnTitle').add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td()):
+            with table(cls='column columnTitle').add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td(cls='center')):
                 h1('TRITON SOFTWARE ENGINEERING')
             # Right lightbulb
             with table(cls='column columnLogo').add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td()):

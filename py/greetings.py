@@ -25,13 +25,13 @@ def _greetings(greet_title, greet_sub = 'Here are some things to get excited abo
         # Greeting
         with tr().add(td()).add(table()).add(tr()).add(td(cls='greeting')):
             # Title
-            with table().add(tr()).add(td()):
+            with table().add(tr()).add(td(cls='center')):
                 # Changes according to argument week
                 h2(greet_title)
             # Horizontal rule
             hr(cls='horiz')
             # Subtitle
-            with table().add(tr()).add(td()):
+            with table().add(tr()).add(td(cls='center')):
                 h3(greet_sub)
 
     return greeting
