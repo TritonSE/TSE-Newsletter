@@ -1,9 +1,11 @@
 # TSE-Newsletter
 
-Please do not directly edit version0.html, this is the file you should reference! The newsletter.html file is the one we will use.
+## Project Description
 
-Feel free to test with your own files in your branches!
+This project creates a newsletter template for TSE's own biweekly newsletter. It uses HTML/CSS to render a flexible template that can be customized from newsletter to newsletter.
 
-We will write a script to generate the HTML files using the [Dominate library](https://github.com/Knio/dominate).
+The project also uses a script to generate the HTML files using the [Dominate library](https://github.com/Knio/dominate).
 
-To install, run: `sudo pip install dominate`
+## Run Project and Setup Environment
+
+To install, run: `pip install dominate`
