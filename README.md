@@ -1,7 +1,7 @@
 # TSE-Newsletter
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/TritonSE/TSE-Newsletter)](https://github.com/TritonSE/TSE-Newsletter/commits/main)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/TritonSE/TSE-Newsletter/pulls)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg?style=flat)](https://github.com/TritonSE/TSE-Newsletter/pulls)
 
 ## Project Description
 
