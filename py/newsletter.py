@@ -28,8 +28,8 @@ with doc:
     with div(cls='wrapper').add(div(cls='container')).add(table(cls='outer height')):
         with tr().add(td()):
             _head()
-        with tr().add(td()):
-            _greetings(greet_title)
+        # with tr().add(td()):
+        #     _greetings(greet_title)
         # with tr().add(td()):
         #     _bodylineleft()
         # with tr().add(td()):

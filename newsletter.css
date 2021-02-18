@@ -217,35 +217,8 @@ a {
     font-size: 0;
 }
 
-.column {
-    width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.columnLogo {
-    max-width: 13%;
-}
-
-.columnTitle {
-    max-width: 74%;
-}
-
-.columnTitle .padding {
-    padding: 0 10px;
-}
-
-.logo h1 {
-    color: #FCF6E5;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 26px;
-    letter-spacing: 0.02em;
-}
-
-.lightbulb {
-    max-width: 50px;
+.banner {
+    max-width: 600px;
 }
 
 .socials {
@@ -330,8 +303,12 @@ a {
     max-width: 80px;
 }
 
+.lightbulb {
+    max-width: 50px;
+}
+
 /* styling for displays less than 600px */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .logo h1 {
         font-size: 4vw;
     }
@@ -339,4 +316,4 @@ a {
     .social p {
         font-size: 2.5vw;
     }
-}
+} */

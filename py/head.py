@@ -21,15 +21,9 @@ def _head():
     with div() as header:
         # Logo
         with tr().add(td()).add(table(cls='header')).add(tr()).add(td(cls='logo')).add(a(href='https://tse.ucsd.edu/', target='_blank')):
-            # Left lightbulb
-            with table(cls='column columnLogo').add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td()):
-                img(cls='lightbulb', src='https://drive.google.com/uc?export=view&id=1gq2ARk8HOCKw9MBrUfrEYe3GJjHGyBta')
-            # TSE
-            with table(cls='column columnTitle').add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td(cls='center')):
-                h1('TRITON SOFTWARE ENGINEERING')
-            # Right lightbulb
-            with table(cls='column columnLogo').add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td()):
-                img(cls='lightbulb', src='https://drive.google.com/uc?export=view&id=1gq2ARk8HOCKw9MBrUfrEYe3GJjHGyBta')
+            # TSE Banner
+            with table().add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td(cls='center')):
+                img(cls='banner', src='https://drive.google.com/uc?export=view&id=1czSvLEq4b05e2ngXvCwL5OUUz-G92X_J')
         # Socials
         with tr().add(td()).add(table(cls='socials')).add(tr()).add(td(cls='social')):
             # Facebook
