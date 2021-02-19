@@ -23,7 +23,7 @@ def _bodylineleft(title, entries):
             4. If the elements of an entry's body are not Content or Image objects.
             5. If the elements of Content are not Text, Link or Linebreak objects.
     """
-    with table() as bodylineleft:
+    with table(cls="height") as bodylineleft:
         with tr():
             #Creates vertical line
             td(cls="td-valign left-line-pad").add(div(cls="vertical-left"))
@@ -45,35 +45,35 @@ def _bodylineleft(title, entries):
                     if isinstance(entry, Entry):
                         #Creates table for the entry.
                         with tr().add(td(cls=entry_class)).add(table()):
-                            tr().add(td(cls="td-valign")).add(h2(entry.title))
+                            tr().add(td(cls="td-valign")).add(h2(entry.title, cls="title"))
                             #Adds details section if the entry has one.
                             if entry.details != None:
                                 with tr().add(td(cls="td-valign detail-pad")):
                                     #Iterates through the details array and generates HTML depending on object type.
                                     for line in entry.details:
-                                        if isinstance(line, Text):
-                                            p(line.text, cls="details")
+                                        if isinstance(line, Link):
+                                            with p(cls="details").add(u()):
+                                                a(line.text, cls="link", href=line.url, target="_blank")
                                         elif isinstance(line, Linebreak):
                                             for i in range(line.numBreaks):
                                                 br()
-                                        elif isinstance(line, Link):
-                                            with p(cls="details").u():
-                                                a(line.text, cls="link", href=line.url, target="_blank")
+                                        elif isinstance(line, Text):
+                                            p(line.text, cls="details")
                                         else:
                                             raise TypeError("Elements of details must be either a Text, Linebreak or Link object.")
                             #Iterates through the body of the entry to create HTML for rendering a block of content or an image.
                             for elem in entry.body:
                                 if isinstance(elem, Content):
                                     with tr().add(td(cls="td-valign left-desc-pad")):
-                                        for line in elem.body:
-                                            if isinstance(line, Text):
-                                                p(line.text, cls="description")
+                                        for line in elem.desc:
+                                            if isinstance(line, Link):
+                                                with p(cls="description").add(u()):
+                                                    a(line.text, cls="link", href=line.url, target="_blank")
                                             elif isinstance(line, Linebreak):
                                                 for i in range(line.numBreaks):
                                                     br()
-                                            elif isinstance(line, Link):
-                                                with p(cls="description").u():
-                                                    a(line.text, cls="link", href=line.url, target="_blank")
+                                            elif isinstance(line, Text):
+                                                p(line.text, cls="description")
                                             else:
                                                 raise TypeError("Elements of Content object must be either a Text, Link or Linebreak object.")
                                 elif isinstance(elem, Image):
