@@ -47,14 +47,14 @@ def _bodynoline(title, entries):
                             #For every element in the description, HTML is dependent on if it represents
                             #plain text, linebreaks, or a link.
                             for line in elem.desc:
-                                if isinstance(line, Text):
-                                    p(line.text, cls="description center")
+                                if isinstance(line, Link):
+                                    with p(cls="description center").add(u()):
+                                        a(line.text, cls="link", href=line.url, target="_blank")
                                 elif isinstance(line, Linebreak):
                                     for i in range(line.numBreaks):
                                         br()
-                                elif isinstance(line, Link):
-                                    with p(cls="description center").add(u()):
-                                        a(line.text, cls="link", href=line.url, target="_blank")
+                                elif isinstance(line, Text):
+                                    p(line.text, cls="description center")
                                 else:
                                     raise TypeError("Elements of Content object must be Text, Link, or Linebreak objects")
                     #If the element is an Image, renders the image or displays the alt.
