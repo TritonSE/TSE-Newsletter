@@ -5,11 +5,11 @@ from entry_objects import *
 def _bodylineleft(title, entries):
     """Returns the HTML for a left-oriented body section with a vertical line. The section has a 
     title, such as Upcoming Events, as well as images and entries for the section. Entries have their own title,
-    an optional list of details, and a description that consists of text and links
+    an optional list of details, and a description that consists of text and links.
 
     Args:
         title (string) - The title of the newsletter section. Ex: "UPCOMING EVENTS"
-        entries (list of Entry objects) - A list of entries under the newsletter section. Ex: [Entry("Documentation Workshop", [Text("Thursday, 9PM")], [Content([Text("Don't be afraid to be ambitious.")])])]
+        entries (list of Entry objects) - A list of entries under the newsletter section. Ex: [Entry("Documentation Workshop", [Content([Text("Don't be afraid to be ambitious.")])], [Text("Thursday, 9PM")])]
 
     Returns:
         An HTML document object that contains HTML for a left-oriented newsletter section with a vertical line.
