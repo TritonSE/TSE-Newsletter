@@ -3,7 +3,7 @@ from dominate.tags import *
 from entry_objects import *
 
 def _bodylineleft(title, entries):
-    """Returns the HTML for a left-oriented body section with a vertical line. The section has a 
+    """Returns the HTML for a left-oriented body section with a vertical line on the left. The section has a 
     title, such as Upcoming Events, as well as images and entries for the section. Entries have their own title,
     an optional list of details, and a description that consists of text and links.
 
