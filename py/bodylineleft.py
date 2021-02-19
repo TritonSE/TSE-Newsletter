@@ -87,8 +87,4 @@ def _bodylineleft(title, entries):
                             img(cls="img-left", src=entry.url, alt=entry.alt)
                     else:
                         raise TypeError("Elements of entries must either be Entry or Image object.")
-                    
-                        
-                            
-        
-    return p('This is the body with a left line.')
+    return bodylineleft
