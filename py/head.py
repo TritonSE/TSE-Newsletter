@@ -28,25 +28,25 @@ def _head():
         with tr().add(td()).add(table(cls='header')).add(tr()).add(td(cls='logo')).add(a(href='https://tse.ucsd.edu/', target='_blank')):
             # TSE Banner
             with table().add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td(cls='center')):
-                img(cls='banner', src=banner_img)
+                img(cls='banner', src=banner_img, alt='TSE Logo')
         # Socials
         with tr().add(td()).add(table(cls='socials')).add(tr()).add(td(cls='social')):
             # Facebook
             with a(href='https://www.facebook.com/TritonSE/', target='_blank').add(table(cls='column columnLeft')).add(tr()).add(td()).add(table()).add(tr()):
                 with td():
-                    img(cls='icon', src=fb_img)
+                    img(cls='icon', src=fb_img, alt='Facebook Logo')
                 with td():
                     p('@TritonSE')
             # Instagram
             with a(href='https://www.instagram.com/ucsd_tse/', target='_blank').add(table(cls='column columnLeft')).add(tr()).add(td()).add(table()).add(tr()):
                 with td():
-                    img(cls='icon', src=ig_img)
+                    img(cls='icon', src=ig_img, alt='Instagram Logo')
                 with td():
                     p('@ucsd_tse')
             # LinkedIn
             with a(href='https://www.linkedin.com/company/tritonsoftwareengineering/', target='_blank').add(table(cls='column columnRight')).add(tr()).add(td()).add(table()).add(tr()):
                 with td():
-                    img(cls='icon', src=in_img)
+                    img(cls='icon', src=in_img, alt='LinkedIn Logo')
                 with td():
                     p('Triton Software Engineering')
 
