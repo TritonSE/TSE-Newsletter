@@ -1,6 +1,11 @@
 import dominate
 from dominate.tags import *
 
+banner_img = 'https://drive.google.com/uc?export=view&id=1czSvLEq4b05e2ngXvCwL5OUUz-G92X_J'
+fb_img = 'https://drive.google.com/uc?export=view&id=12a0jjtP5y-3BoSyxWQFXPEfli5rC9RyI'
+ig_img = 'https://drive.google.com/uc?export=view&id=1pzLNGWWHnNxMgPXKl8UQREI4TblB6o-Y'
+in_img = 'https://drive.google.com/uc?export=view&id=1vEoRqm-IqkHbhpHsSV5y0k6o_LlnG-hC'
+
 def _head():
     """This function generates a header using table elements and returns it as HTML. The header consists of the banner logo
     (lightbulbs and title) and the social media handles with their icons. The banner links to the main TSE website and each
@@ -23,25 +28,25 @@ def _head():
         with tr().add(td()).add(table(cls='header')).add(tr()).add(td(cls='logo')).add(a(href='https://tse.ucsd.edu/', target='_blank')):
             # TSE Banner
             with table().add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td(cls='center')):
-                img(cls='banner', src='https://drive.google.com/uc?export=view&id=1czSvLEq4b05e2ngXvCwL5OUUz-G92X_J')
+                img(cls='banner', src=banner_img)
         # Socials
         with tr().add(td()).add(table(cls='socials')).add(tr()).add(td(cls='social')):
             # Facebook
             with a(href='https://www.facebook.com/TritonSE/', target='_blank').add(table(cls='column columnLeft')).add(tr()).add(td()).add(table()).add(tr()):
                 with td():
-                    img(cls='icon', src='https://drive.google.com/uc?export=view&id=12a0jjtP5y-3BoSyxWQFXPEfli5rC9RyI')
+                    img(cls='icon', src=fb_img)
                 with td():
                     p('@TritonSE')
             # Instagram
             with a(href='https://www.instagram.com/ucsd_tse/', target='_blank').add(table(cls='column columnLeft')).add(tr()).add(td()).add(table()).add(tr()):
                 with td():
-                    img(cls='icon', src='https://drive.google.com/uc?export=view&id=1pzLNGWWHnNxMgPXKl8UQREI4TblB6o-Y')
+                    img(cls='icon', src=ig_img)
                 with td():
                     p('@ucsd_tse')
             # LinkedIn
             with a(href='https://www.linkedin.com/company/tritonsoftwareengineering/', target='_blank').add(table(cls='column columnRight')).add(tr()).add(td()).add(table()).add(tr()):
                 with td():
-                    img(cls='icon', src='https://drive.google.com/uc?export=view&id=1vEoRqm-IqkHbhpHsSV5y0k6o_LlnG-hC')
+                    img(cls='icon', src=in_img)
                 with td():
                     p('Triton Software Engineering')
 
