@@ -30,14 +30,14 @@ with doc:
             _head()
         with tr().add(td()):
             _greetings(greet_title)
-        # with tr().add(td()):
-        #     _bodylineleft()
-        # with tr().add(td()):
-        #     _bodylineright()
-        # with tr().add(td()):
-        #     _bodynoline()
-        # with tr().add(td()):
-        #     _foot()
+        with tr().add(td()):
+            _bodylineleft()
+        with tr().add(td()):
+            _bodylineright()
+        with tr().add(td()):
+            _bodynoline()
+        with tr().add(td()):
+            _foot()
 
 # write out final output to newsletter.html
 with open('newsletter.html', 'w') as out_file:
