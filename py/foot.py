@@ -1,6 +1,8 @@
 import dominate
 from dominate.tags import *
 
+logo_img = 'https://drive.google.com/uc?export=view&id=1gq2ARk8HOCKw9MBrUfrEYe3GJjHGyBta'
+
 def _foot():
     """Returns the generated HTML footer. TODO: edit this description
 
@@ -13,7 +15,15 @@ def _foot():
         TODO
 
     Raises:
-        TODO
+        None
     """
 
-    return h1('This is the footer.')
+    with div() as footer:
+        with tr().add(tr()).add(table()).add(tr()).add(td(cls='footer')):
+            hr(cls='horiz')
+            with table(cls='columnLogo columnLeft').add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td()):
+                img(cls='lightbulb', src=logo_img, alt='Logo Image')
+            with table(cls='columnLogo columnRight').add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td()):
+                img(cls='lightbulb', src=logo_img, alt='Logo Image')
+
+    return footer
