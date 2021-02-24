@@ -26,10 +26,10 @@ with doc.head:
 with doc:
     # enclose all of the elements within div elements (currently set to ef-styling)
     with div(cls='wrapper').add(div(cls='container')).add(table(cls='outer height')):
-        # with tr().add(td()):
-        #     _head()
-        # with tr().add(td()):
-        #     _greetings(greet_title)
+        with tr().add(td()):
+            _head()
+        with tr().add(td()):
+            _greetings(greet_title)
         # with tr().add(td()):
         #     _bodylineleft()
         # with tr().add(td()):

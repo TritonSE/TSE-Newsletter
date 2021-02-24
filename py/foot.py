@@ -19,11 +19,11 @@ def _foot():
     """
 
     with div() as footer:
-        with tr().add(tr()).add(table()).add(tr()).add(td(cls='footer')):
+        with tr().add(td()).add(table()).add(tr()).add(td(cls='footer')):
             hr(cls='horiz')
-            with table(cls='columnLogo columnLeft').add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td()):
-                img(cls='lightbulb', src=logo_img, alt='Logo Image')
-            with table(cls='columnLogo columnRight').add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td()):
-                img(cls='lightbulb', src=logo_img, alt='Logo Image')
+            with table(cls='columnLeft').add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td()):
+                img(cls='logoLeft', src=logo_img, alt='Logo Image')
+            with table(cls='columnRight').add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td()):
+                img(cls='logoRight', src=logo_img, alt='Logo Image')
 
     return footer
