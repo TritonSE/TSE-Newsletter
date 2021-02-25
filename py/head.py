@@ -1,10 +1,6 @@
 import dominate
 from dominate.tags import *
-
-banner_img = 'https://drive.google.com/uc?export=view&id=1czSvLEq4b05e2ngXvCwL5OUUz-G92X_J'
-fb_img = 'https://drive.google.com/uc?export=view&id=12a0jjtP5y-3BoSyxWQFXPEfli5rC9RyI'
-ig_img = 'https://drive.google.com/uc?export=view&id=1pzLNGWWHnNxMgPXKl8UQREI4TblB6o-Y'
-in_img = 'https://drive.google.com/uc?export=view&id=1vEoRqm-IqkHbhpHsSV5y0k6o_LlnG-hC'
+from constants import *
 
 def _head():
     """This function generates a header using table elements and returns it as HTML. The header consists of the banner logo
@@ -25,28 +21,28 @@ def _head():
     """
     with div() as header:
         # Logo
-        with tr().add(td()).add(table(cls='header')).add(tr()).add(td(cls='logo')).add(a(href='https://tse.ucsd.edu/', target='_blank')):
+        with tr().add(td()).add(table(cls='header')).add(tr()).add(td(cls='logo')).add(a(href=TSE_SITE, target='_blank')):
             # TSE Banner
             with table().add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td(cls='center')):
-                img(cls='banner', src=banner_img, alt='TSE Logo')
+                img(cls='banner', src=BANNER_IMG, alt='TSE Banner')
         # Socials
         with tr().add(td()).add(table(cls='socials')).add(tr()).add(td(cls='social')):
             # Facebook
-            with a(href='https://www.facebook.com/TritonSE/', target='_blank').add(table(cls='column columnLeft')).add(tr()).add(td()).add(table()).add(tr()):
+            with a(href=TSE_FB, target='_blank').add(table(cls='column columnLeft')).add(tr()).add(td()).add(table()).add(tr()):
                 with td():
-                    img(cls='icon', src=fb_img, alt='Facebook Logo')
+                    img(cls='icon', src=FB_IMG, alt='Facebook Logo')
                 with td():
                     p('@TritonSE')
             # Instagram
-            with a(href='https://www.instagram.com/ucsd_tse/', target='_blank').add(table(cls='column columnLeft')).add(tr()).add(td()).add(table()).add(tr()):
+            with a(href=TSE_IG, target='_blank').add(table(cls='column columnLeft')).add(tr()).add(td()).add(table()).add(tr()):
                 with td():
-                    img(cls='icon', src=ig_img, alt='Instagram Logo')
+                    img(cls='icon', src=IG_IMG, alt='Instagram Logo')
                 with td():
                     p('@ucsd_tse')
             # LinkedIn
-            with a(href='https://www.linkedin.com/company/tritonsoftwareengineering/', target='_blank').add(table(cls='column columnRight')).add(tr()).add(td()).add(table()).add(tr()):
+            with a(href=TSE_IN, target='_blank').add(table(cls='column columnRight')).add(tr()).add(td()).add(table()).add(tr()):
                 with td():
-                    img(cls='icon', src=in_img, alt='LinkedIn Logo')
+                    img(cls='icon', src=IN_IMG, alt='LinkedIn Logo')
                 with td():
                     p('Triton Software Engineering')
 

@@ -1,7 +1,6 @@
 import dominate
 from dominate.tags import *
-
-logo_img = 'https://drive.google.com/uc?export=view&id=1gq2ARk8HOCKw9MBrUfrEYe3GJjHGyBta'
+from constants import *
 
 def _foot():
     """This function generates a footer using table elements and returns it as HTML. The footer consists of a horizontal line
@@ -23,8 +22,8 @@ def _foot():
         with tr().add(td()).add(table()).add(tr()).add(td(cls='footer')):
             hr(cls='horiz')
             with table(cls='columnLeft').add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td()):
-                img(cls='logoLeft', src=logo_img, alt='Logo Image')
+                img(cls='logoLeft', src=LOGO_IMG, alt='Logo Image')
             with table(cls='columnRight').add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td()):
-                img(cls='logoRight', src=logo_img, alt='Logo Image')
+                img(cls='logoRight', src=LOGO_IMG, alt='Logo Image')
 
     return footer

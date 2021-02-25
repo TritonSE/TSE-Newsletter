@@ -30,12 +30,12 @@ with doc:
             _head()
         with tr().add(td()):
             _greetings(greet_title)
-        with tr().add(td()):
-            _bodylineleft()
-        with tr().add(td()):
-            _bodylineright()
-        with tr().add(td()):
-            _bodynoline()
+        # with tr().add(td()):
+        #     _bodylineleft()
+        # with tr().add(td()):
+        #     _bodylineright()
+        # with tr().add(td()):
+        #     _bodynoline()
         with tr().add(td()):
             _foot()
 
