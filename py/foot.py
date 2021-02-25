@@ -4,15 +4,16 @@ from dominate.tags import *
 logo_img = 'https://drive.google.com/uc?export=view&id=1gq2ARk8HOCKw9MBrUfrEYe3GJjHGyBta'
 
 def _foot():
-    """Returns the generated HTML footer. TODO: edit this description
-
-    TODO: A description here, according to Google's Python style guide https://github.com/google/styleguide/blob/gh-pages/pyguide.md#38-comments-and-docstrings
+    """This function generates a footer using table elements and returns it as HTML. The footer consists of a horizontal line
+    with left- and right- aligned TSE lightbulb logos below.This section of the newsletter should not need to be changed
+    since no new information needs to be added. DO NOT EDIT!
 
     Args:
-        TODO
+        None
 
     Returns:
-        TODO
+        An HTML document object containing the newsletter's footer. The footer consists of a horizontal rule with two tables
+        side-by-side below it. Each table contains a left- or right-aligned TSE lightbulb logo.
 
     Raises:
         None
