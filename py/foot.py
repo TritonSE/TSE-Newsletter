@@ -19,7 +19,7 @@ def _foot():
     """
 
     with div() as footer:
-        with tr().add(td()).add(table()).add(tr()).add(td(cls='footer')):
+        with tr().add(td(cls='footer')):
             hr(cls='horiz')
             with table(cls='columnLeft').add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td()):
                 img(cls='logoLeft', src=LOGO_IMG, alt='Logo Image')
