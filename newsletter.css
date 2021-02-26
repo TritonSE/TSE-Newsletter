@@ -207,7 +207,7 @@ a {
     margin-top: 50px;
 }
 
-.header .padding {
+.padding {
     padding: 15px;
 }
 
@@ -235,11 +235,11 @@ a {
     text-align: center;
 }
 
-.columnLeft {
+.socials .columnLeft {
     width: 25%;
 }
 
-.columnRight {
+.socials .columnRight {
     width: 42%;
 }
 
@@ -298,18 +298,32 @@ a {
 
 /* footer.html */
 .footer {
-    text-align: center;
+    padding-top: 3.125vw;
 }
 
 .footer .horiz {
     border: .1em solid #FFD807; 
     width: 5.5em;
+
+    margin-bottom: 1.25em;
 }
 
-.lightbulb {
-    max-width: 50px;
+.logoLeft {
+    width: 16%;
+    float: left;
 }
 
-.footer .columnLogo {
-    max-width: 80px;
+.logoRight {
+    width: 16%;
+    float: right;
+}
+
+.footer .columnLeft {
+    width: 50%;
+    float: left;
+}
+
+.footer .columnRight {
+    width: 50%;
+    float: right;
 }
