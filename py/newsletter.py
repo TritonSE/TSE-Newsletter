@@ -24,7 +24,7 @@ with doc.head:
 
 # create the document body
 with doc:
-    # enclose all of the elements within div elements (currently set to ef-styling)
+    # enclose all of the elements within div/table elements
     with div(cls='wrapper').add(div(cls='container')).add(table(cls='outer height')):
         with tr().add(td()):
             _head()
