@@ -30,14 +30,16 @@ with doc:
             _head()
         with tr().add(td()):
             _greetings(greet_title)
-        with tr().add(td()):
-            _bodylineleft()
-        with tr().add(td()):
-            _bodylineright()
-        with tr().add(td()):
-            _bodynoline()
+        # with tr().add(td()):
+        #     _bodylineleft()
+        # with tr().add(td()):
+        #     _bodylineright()
+        # with tr().add(td()):
+        #     _bodynoline()
         with tr().add(td()):
             _foot()
+    # google analytics that tracks email opens
+    img(src='https://www.google-analytics.com/collect?v=1&tid=UA-192012371-2&cid=CLIENT_ID_NUMBER&t=event&ec=email&ea=open&el=recipient_id&cs=newsletter&cm=email&cn=TSE_NEWSLETTER&dp=%2Femail%2Fnewsletter&dt=TSE%20Newsletter')
 
 # write out final output to newsletter.html
 with open('newsletter.html', 'w') as out_file:
