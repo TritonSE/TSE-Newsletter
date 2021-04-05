@@ -23,19 +23,20 @@ def _bodylineleft(title, entries):
             4. If the elements of an entry's body are not Content or Image objects.
             5. If the elements of Content are not Text, Link or Linebreak objects.
     """
-    with table(cls="height") as bodylineleft:
-        with tr():
+    with table(cls="height section-padding") as bodylineleft:
+        with tr().add(td(cls="td-valign section-title-left")).add(div(cls="title-div")):
+            #Makes section title and horizontal line.
+            if isinstance(title, str):
+                h1(title, cls="section-title")
+                hr(cls="horiz")
+            else:
+                raise TypeError("Title must be a string.")
+        with tr().add(td(cls="td-valign")).add(table(cls="height")).add(tr()):
+            td(cls="td-valign left-line-pad").add()
             #Creates vertical line
-            td(cls="td-valign left-line-pad").add(div(cls="vertical-left"))
+            td(cls="td-valign vertical-left").add()
             #Makes table for entries.
             with td(cls="td-valign left-pad").add(table()):
-                with tr().add(td(cls="td-valign")).add(div(cls="title-div")):
-                    #Makes section title and horizontal line.
-                    if isinstance(title, str):
-                        h1(title, cls="section-title")
-                        hr(cls="horiz")
-                    else:
-                        raise TypeError("Title must be a string.")
                 for i in range(len(entries)):
                     entry = entries[i]
                     #Adjusts padding for the first entry of the section.

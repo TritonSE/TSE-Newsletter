@@ -54,6 +54,8 @@ a {
     width: 100%;
     margin-top: .5em;
     margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
 }
 
 .td-valign {
@@ -75,6 +77,16 @@ a {
 
 .title-div {
     display: inline-block;
+}
+
+.section-title-left {
+    padding-left: 3.7em;
+    padding-bottom: .9em;
+}
+
+.section-title-right {
+    padding-right: 3.7em;
+    padding-bottom: .9em;
 }
 
 .section-title {
@@ -123,12 +135,10 @@ a {
 
 .right-line-pad {
     padding-right: 1.875em;
-    padding-top: 3.75em;
 }
 
 .left-line-pad {
     padding-left: 1.875em;
-    padding-top: 3.75em;
 }
 
 .vertical-left {
@@ -171,7 +181,7 @@ a {
 }
 
 .first-entry{
-    padding-top: .75em;
+    padding-top: 0em;
 }
 
 .left-desc-pad{
