@@ -9,7 +9,7 @@ IG_IMG = 'https://drive.google.com/uc?export=view&id=1pzLNGWWHnNxMgPXKl8UQREI4Tb
 IN_IMG = 'https://drive.google.com/uc?export=view&id=1vEoRqm-IqkHbhpHsSV5y0k6o_LlnG-hC'
 
 # Hyperlinks
-TSE_SITE = 'https://tse.ucsd.edu/?utm_source=newsletter&utm_medium=email&utm_campaign=TSE%20Website'
-TSE_FB = 'https://www.facebook.com/TritonSE/?utm_source=newsletter&utm_medium=email&utm_campaign=TSE%20Facebook'
-TSE_IG = 'https://www.instagram.com/ucsd_tse/?utm_source=newsletter&utm_medium=email&utm_campaign=TSE%20Instagram'
-TSE_IN = 'https://www.linkedin.com/company/tritonsoftwareengineering/?utm_source=newsletter&utm_medium=email&utm_campaign=TSE%20LinkedIn'
+TSE_SITE = 'https://tse.ucsd.edu'
+TSE_FB = 'https://www.facebook.com/TritonSE'
+TSE_IG = 'https://www.instagram.com/ucsd_tse'
+TSE_IN = 'https://www.linkedin.com/company/tritonsoftwareengineering'
