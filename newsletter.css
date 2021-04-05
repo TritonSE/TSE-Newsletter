@@ -26,7 +26,7 @@ a {
 .wrapper {
     width: 100%;
     table-layout: fixed;
-    background-color: #0C2B35;
+    background-color: #408096;
 }
 
 .container {
@@ -116,7 +116,7 @@ a {
     font-weight: 500;
     font-size: 1.0625em;
     letter-spacing: .02em;
-    color: #8B9BA0;
+    color: #D3D3D3;
     margin-top: 0em;
     margin-bottom: 0em;
 }
