@@ -54,8 +54,6 @@ a {
     width: 100%;
     margin-top: .5em;
     margin-bottom: 0em;
-    margin-left: 0em;
-    margin-right: 0em;
 }
 
 .td-valign {
@@ -63,6 +61,10 @@ a {
 }
 
 .section-padding {
+    padding-top: 5em;
+}
+
+.first-section-padding {
     padding-top: 1.25em;
 }
 
@@ -222,7 +224,6 @@ a {
 }
 
 .logo {
-    background-color: #153641;
     font-size: 0;
 }
 
@@ -259,7 +260,7 @@ a {
 }
 
 .social p {
-    color: #8B9BA0;
+    color: #D3D3D3;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;

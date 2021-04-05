@@ -30,11 +30,11 @@ with doc:
             _head()
         with tr().add(td()):
             _greetings(greet_title)
-        with tr().add(td()):
+        with tr().add(td(cls="first-section-padding")):
             _bodylineleft()
-        with tr().add(td()):
+        with tr().add(td(cls="section-padding")):
             _bodylineright()
-        with tr().add(td()):
+        with tr().add(td(cls="section-padding")):
             _bodynoline()
         with tr().add(td()):
             _foot()
