@@ -217,14 +217,17 @@ a {
     margin-top: 50px;
 }
 
-.header .padding {
+.padding {
     padding: 15px;
 }
 
 .logo {
     background-color: #153641;
     font-size: 0;
-    text-align: center;
+}
+
+.banner {
+    width: 100%;
 }
 
 .column {
@@ -233,35 +236,8 @@ a {
     vertical-align: middle;
 }
 
-.columnLogo {
-    max-width: 80px;
-}
-
-.columnTitle {
-    max-width: 440px;
-}
-
-.columnTitle .padding {
-    padding: 0 10px;
-}
-
-.logo h1 {
-    color: #FCF6E5;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 26px;
-    letter-spacing: 0.02em;
-    text-align: center;
-}
-
-.lightbulb {
-    width: 50;
-    max-width: 50px;
-}
-
 .socials {
-    margin-top: 20px;
+    margin-top: 1.25vw;
 }
 
 .social {
@@ -269,16 +245,16 @@ a {
     text-align: center;
 }
 
-.columnLeft {
-    max-width: 140px;
+.socials .columnLeft {
+    width: 25%;
 }
 
-.columnRight {
-    max-width: 250px;
+.socials .columnRight {
+    width: 42%;
 }
 
 .icon {
-    width: 30;
+    width: 5vw;
     max-width: 30px;
 }
 
@@ -289,23 +265,22 @@ a {
     font-weight: normal;
     font-size: 16px;
     letter-spacing: 0.02em;
-    text-align: center;
 
-    margin-left: 10px;
+    margin-left: 7px;
+
+    width: 100%;
 }
 
 /* greetings.html */
-
 .greeting {
-    padding-top: 50px;
-    text-align: center;
+    padding-top: 3.125vw;
 }
 
 .greeting .horiz {
     border: .1em solid #FFD807; 
     width: 5.5em;
 
-    margin: 0.3em auto;
+    margin-bottom: 1.25em;
 }
 
 .greeting h2 {
@@ -315,7 +290,7 @@ a {
     font-weight: 600;
     font-size: 22px;
     letter-spacing: 0.02em;
-    text-align: center;
+    width: 100%;
 }
 
 .greeting h3 {
@@ -328,78 +303,37 @@ a {
     margin-left: auto;
     margin-right: auto;
     max-width: 15em;
-    text-align: center;
+    width: 100%;
 }
 
 /* footer.html */
-
 .footer {
-    text-align: center;
+    padding-top: 3.125vw;
 }
 
 .footer .horiz {
     border: .1em solid #FFD807; 
     width: 5.5em;
+
+    margin-bottom: 1.25em;
 }
 
-.footer .columnLogo {
-    max-width: 80px;
+.logoLeft {
+    width: 16%;
+    float: left;
 }
 
-/* for screens less than 600px */
-@media screen and (max-width: 600px) {
-    .columnLogo {
-        max-width: 40px;
-    }
+.logoRight {
+    width: 16%;
+    float: right;
+}
 
-    .columnTitle {
-        max-width: 240px;
-    }
-    
-    .header .padding {
-        padding: 2px;
-    }
+.footer .columnLeft {
+    width: 50%;
+    float: left;
+}
 
-    .logo h1 {
-        font-size: 1.625vw !important;
-    }
-
-    .lightbulb {
-        width: 3.125vw !important;
-        max-width: 3.125vw !important;
-    }
-
-    .columnLeft {
-        max-width: 80px !important;
-    }
-
-    .columnRight {
-        max-width: 140px !important;
-    }
-
-    .icon {
-        width: 1.875vw !important;
-        max-width: 1.875vw !important;
-    }
-
-    .social p {
-        font-size: 2vw !important;
-        margin-left: 3px !important;
-    }
-
-    .greeting .horiz { 
-        width: 2.25em !important;
-    }
-
-    .greeting h2 {
-        font-size: 1.375vw !important;
-    }
-    
-    .greeting h3 {
-        font-size: 1.25vw !important;
-    }
-
-    .footer .horiz {
-        width: 2.25em !important;
-    }
+.footer .columnRight {
+    width: 50%;
+    float: right;
 }
