@@ -21,30 +21,30 @@ def _bodylineright(title, entries):
             5. If the elements of Content are not Text, Link or Linebreak objects.
     """
     with table(cls="height") as bodylineright:
-        with tr():
-            #Makes table for entries.
+        with tr().add(td(cls="td-valign right section-title-right")).add(div(cls="title-div")):
+            # Makes section title and horizontal line.
+            if isinstance(title, str):
+                h1(title, cls="section-title")
+                hr(cls="horiz")
+            else:
+                raise TypeError("Title must be a string.")
+        with tr().add(td(cls="td-valign")).add(table(cls="height")).add(tr()):
+            # Makes table for entries.
             with td(cls="td-valign right-pad").add(table()):
-                with tr().add(td(cls="td-valign right")).add(div(cls="title-div")):
-                    #Makes section title and horizontal line.
-                    if isinstance(title, str):
-                        h1(title, cls="section-title right")
-                        hr(cls="horiz right")
-                    else:
-                        raise TypeError("Title must be a string.")
                 for i in range(len(entries)):
                     entry = entries[i]
-                    #Adjusts padding for the first entry of the section.
+                    # Adjusts padding for the first entry of the section.
                     entry_class = "td-valign entry"
                     if i == 0:
                         entry_class = "td_valign first-entry"
                     if isinstance(entry, Entry):
-                        #Creates table for the entry.
+                        # Creates table for the entry.
                         with tr().add(td(cls=entry_class)).add(table()):
                             tr().add(td(cls="td-valign")).add(h2(entry.title, cls="title right"))
-                            #Adds details section if the entry has one.
+                            # Adds details section if the entry has one.
                             if entry.details != None:
                                 with tr().add(td(cls="td-valign detail-pad")):
-                                    #Iterates through the details array and generates HTML depending on object type.
+                                    # Iterates through the details array and generates HTML depending on object type.
                                     for line in entry.details:
                                         if isinstance(line, Link):
                                             with p(cls="details").add(u()):
@@ -56,7 +56,7 @@ def _bodylineright(title, entries):
                                             p(line.text, cls="details")
                                         else:
                                             raise TypeError("Elements of details must be either a Text, Linebreak or Link object.")
-                            #Iterates through the body of the entry to create HTML for rendering a block of content or an image.
+                            # Iterates through the body of the entry to create HTML for rendering a block of content or an image.
                             for elem in entry.body:
                                 if isinstance(elem, Content):
                                     with tr().add(td(cls="td-valign right-desc-pad")):
@@ -76,12 +76,13 @@ def _bodylineright(title, entries):
                                         img(cls="img-right", src=elem.url, alt=elem.alt)
                                 else:
                                     raise TypeError("Elements of body must be either Content or Image objects")
-                    #If the entry is an Image, then the image is rendered or the alt is displayed.
+                    # If the entry is an Image, then the image is rendered or the alt is displayed.
                     elif isinstance(entry, Image):
                         with tr().add(td(cls=entry_class)):
                             img(cls="img-right", src=entry.url, alt=entry.alt)
                     else:
                         raise TypeError("Elements of entries must either be Entry or Image object.")
-            #Creates vertical line
-            td(cls="td-valign right-line-pad").add(div(cls="vertical-right"))   
+            # Creates vertical line
+            td(cls="td-valign vertical-right")
+            td(cls="td-valign right-line-pad")   
     return bodylineright

@@ -61,6 +61,10 @@ a {
 }
 
 .section-padding {
+    padding-top: 5em;
+}
+
+.first-section-padding {
     padding-top: 1.25em;
 }
 
@@ -75,6 +79,16 @@ a {
 
 .title-div {
     display: inline-block;
+}
+
+.section-title-left {
+    padding-left: 3.7em;
+    padding-bottom: .9em;
+}
+
+.section-title-right {
+    padding-right: 3.7em;
+    padding-bottom: .9em;
 }
 
 .section-title {
@@ -123,12 +137,10 @@ a {
 
 .right-line-pad {
     padding-right: 1.875em;
-    padding-top: 3.75em;
 }
 
 .left-line-pad {
     padding-left: 1.875em;
-    padding-top: 3.75em;
 }
 
 .vertical-left {
@@ -171,7 +183,7 @@ a {
 }
 
 .first-entry{
-    padding-top: .75em;
+    padding-top: 0em;
 }
 
 .left-desc-pad{
@@ -212,7 +224,6 @@ a {
 }
 
 .logo {
-    background-color: #153641;
     font-size: 0;
 }
 
@@ -249,7 +260,7 @@ a {
 }
 
 .social p {
-    color: #8B9BA0;
+    color: #D3D3D3;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
