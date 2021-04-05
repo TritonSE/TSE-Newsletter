@@ -29,7 +29,7 @@ with doc:
         with tr().add(td()):
             _head()
         with tr().add(td()):
-            _greetings()
+            _greetings(greet_title)
         with tr().add(td()):
             _bodylineleft()
         with tr().add(td()):
