@@ -22,7 +22,7 @@ def _bodynoline(title, entries):
             3. If the elements of Content are not Text, Link, or Linebreak objects.
     """
     with table() as bodynoline:
-        with tr().add(td(cls="td-valign center")).add(div(cls="title-div")):
+        with tr().add(td(cls="td-valign section-title-center center")).add(div(cls="title-div")):
             if isinstance(title, str):
                 h1(title, cls="section-title center")
                 hr(cls="horiz")
@@ -49,7 +49,7 @@ def _bodynoline(title, entries):
                             for line in elem.desc:
                                 if isinstance(line, Link):
                                     with p(cls="description center").add(u()):
-                                        a(line.text, cls="link", href=line.url, target="_blank")
+                                        a(line.text, cls="link2", href=line.url, target="_blank")
                                 elif isinstance(line, Linebreak):
                                     for i in range(line.numBreaks):
                                         br()
