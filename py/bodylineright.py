@@ -42,7 +42,7 @@ def _bodylineright(title, entries):
                         with tr().add(td(cls=entry_class)).add(table()):
                             tr().add(td(cls="td-valign")).add(h2(entry.title, cls="title right"))
                             # Adds details section if the entry has one.
-                            if entry.details != None:
+                            if entry.details != []:
                                 with tr().add(td(cls="td-valign detail-pad")):
                                     # Iterates through the details array and generates HTML depending on object type.
                                     for line in entry.details:

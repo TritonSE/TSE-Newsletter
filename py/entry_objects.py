@@ -7,7 +7,7 @@ class Entry:
     2. body (list of Content and Image objects) - Each element in the list is displayed on a new line.
     3. details (list of Content objects) - Each element in the list represents a new detail regarding the event.
     """
-    def __init__(self, title, body, details=None):
+    def __init__(self, title, body, details=[]):
         self.title = title
         self.body = body
         self.details = details
