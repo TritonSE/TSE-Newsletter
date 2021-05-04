@@ -284,26 +284,9 @@ a {
     margin-bottom: 1.25em;
 }
 
-.socials {
-    margin-top: 1.25vw;
-}
-
 .social {
     font-size: 0;
     text-align: center;
-}
-
-.socials .columnLeft {
-    width: 25%;
-}
-
-.socials .columnRight {
-    width: 42%;
-}
-
-.icon {
-    width: 5vw;
-    max-width: 30px;
 }
 
 .social p {
@@ -311,30 +294,36 @@ a {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 0.02em;
 
-    margin-left: 7px;
+    margin-left: 4px;
 
     width: 100%;
 }
 
-.logoLeft {
-    width: 16%;
-    float: left;
+.social .lightbulb {
+    width: 5vw;
+    max-width: 43px;
 }
 
-.logoRight {
-    width: 16%;
-    float: right;
+.right {
+    margin-left: 15px;
 }
 
-.footer .columnLeft {
-    width: 50%;
-    float: left;
+.social .icon {
+    width: 5vw;
+    max-width: 22px;
 }
 
-.footer .columnRight {
-    width: 50%;
-    float: right;
+.social .smColumn {
+    width: 10%;
+}
+
+.social .mdColumn {
+    width: 21%;
+}
+
+.social .lgColumn {
+    width: 38%;
 }

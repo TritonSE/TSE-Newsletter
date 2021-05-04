@@ -21,34 +21,32 @@ def _foot():
     with div() as footer:
         with tr().add(td(cls='footer')):
             hr(cls='horiz')
-
-        # Socials
-        with tr().add(td()).add(table(cls='socials')).add(tr()).add(td(cls='social')):
-            p('Follow us on our social media!')
-            # Facebook
-            with a(href=TSE_FB, target='_blank').add(table(cls='column columnLeft')).add(tr()).add(td()).add(table()).add(tr()):
-                with td():
-                    img(cls='icon', src=FB_IMG, alt='Facebook Logo')
-                with td():
-                    p('@TritonSE')
-            # Instagram
-            with a(href=TSE_IG, target='_blank').add(table(cls='column columnLeft')).add(tr()).add(td()).add(table()).add(tr()):
-                with td():
-                    img(cls='icon', src=IG_IMG, alt='Instagram Logo')
-                with td():
-                    p('@ucsd_tse')
-            # LinkedIn
-            with a(href=TSE_IN, target='_blank').add(table(cls='column columnRight')).add(tr()).add(td()).add(table()).add(tr()):
-                with td():
-                    img(cls='icon', src=IN_IMG, alt='LinkedIn Logo')
-                with td():
-                    p('Triton Software Engineering')
-
-        # Lightbulbs
-        with tr().add(td(cls='footer')):
-            with table(cls='columnLeft').add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td()):
-                img(cls='logoLeft', src=LOGO_IMG, alt='Logo Image')
-            with table(cls='columnRight').add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td()):
-                img(cls='logoRight', src=LOGO_IMG, alt='Logo Image')
+            # Socials + Lightbulbs
+            with tr().add(td(cls='padding social')):
+                p('Follow us on our social media!')
+                # Lightbulb
+                with table(cls='column smColumn').add(tr()).add(td()).add(table()).add(tr()).add(td()):
+                    img(cls='lightbulb', src=LOGO_IMG, alt='Logo Image')
+                # Facebook
+                with a(href=TSE_FB, target='_blank').add(table(cls='column mdColumn')).add(tr()).add(td()).add(table()).add(tr()):
+                    with td():
+                        img(cls='icon', src=FB_IMG, alt='Facebook Logo')
+                    with td():
+                        p('@TritonSE')
+                # Instagram
+                with a(href=TSE_IG, target='_blank').add(table(cls='column mdColumn')).add(tr()).add(td()).add(table()).add(tr()):
+                    with td():
+                        img(cls='icon', src=IG_IMG, alt='Instagram Logo')
+                    with td():
+                        p('@ucsd_tse')
+                # LinkedIn
+                with a(href=TSE_IN, target='_blank').add(table(cls='column lgColumn')).add(tr()).add(td()).add(table()).add(tr()):
+                    with td():
+                        img(cls='icon', src=IN_IMG, alt='LinkedIn Logo')
+                    with td():
+                        p('Triton Software Engineering')
+                # Lightbulb
+                with table(cls='column smColumn').add(tr()).add(td()).add(table()).add(tr()).add(td()):
+                    img(cls='lightbulb right', src=LOGO_IMG, alt='Logo Image')
 
     return footer
