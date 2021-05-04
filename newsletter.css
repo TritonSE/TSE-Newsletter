@@ -69,12 +69,12 @@ a {
     padding-top: 1.25em;
 }
 
-.link1 {
+.details_link {
     color: #D3D3D3;
     background-color: transparent;
 }
 
-.link2 {
+.desc_link {
     color: #FCF6E5;
     background-color: transparent;
 }

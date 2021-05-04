@@ -48,7 +48,7 @@ def _bodylineright(title, entries):
                                     for line in entry.details:
                                         if isinstance(line, Link):
                                             with p(cls="details").add(u()):
-                                                a(line.text, cls="link1", href=line.url, target="_blank")
+                                                a(line.text, cls="details_link", href=line.url, target="_blank")
                                         elif isinstance(line, Linebreak):
                                             for i in range(line.numBreaks):
                                                 br()
@@ -63,7 +63,7 @@ def _bodylineright(title, entries):
                                         for line in elem.desc:
                                             if isinstance(line, Link):
                                                 with p(cls="description right").add(u()):
-                                                    a(line.text, cls="link2", href=line.url, target="_blank")
+                                                    a(line.text, cls="desc_link", href=line.url, target="_blank")
                                             elif isinstance(line, Linebreak):
                                                 for i in range(line.numBreaks):
                                                     br()
