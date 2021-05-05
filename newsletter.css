@@ -13,6 +13,7 @@ body {
 table {
     border-spacing: 0;
     width: 100%;
+    margin: 0 auto;
 }
 
 td {
@@ -68,8 +69,13 @@ a {
     padding-top: 1.25em;
 }
 
-.link:link, .link:visited, .link:hover, .link:active {
+.details_link {
     color: #D3D3D3;
+    background-color: transparent;
+}
+
+.desc_link {
+    color: #FCF6E5;
     background-color: transparent;
 }
 
@@ -91,11 +97,15 @@ a {
     padding-bottom: .9em;
 }
 
+.section-title-center {
+    padding-bottom: .9em;
+}
+
 .section-title {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 1.75em;
+    font-size: 2em;
     letter-spacing: .02em;
     color: #FDF3DF;
     margin-top: 0em;
@@ -106,7 +116,7 @@ a {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.25em;
+    font-size: 1.6em;
     letter-spacing: .02em;
     color: #FCF6E5;
     margin-top: 0em;
@@ -130,7 +140,7 @@ a {
     font-weight: 500;
     font-size: 1.0625em;
     letter-spacing: .02em;
-    color: #D3D3D3;
+    color: #ecebeb;
     margin-top: 0em;
     margin-bottom: 0em;
 }
@@ -154,7 +164,7 @@ a {
 }
 
 .img-left {
-    width: 28.125em;
+    width: 24em;
 }
 
 .img-center {
@@ -164,7 +174,7 @@ a {
 }
 
 .img-right {
-    width: 28.125em;
+    width: 24em;
     margin-right: 0em;
     margin-left: auto;
     display: block;
@@ -199,7 +209,7 @@ a {
 .center-desc-pad{
     padding-left: 4.375em;
     padding-right: 4.375em;
-    padding-top: .5em;
+    padding-top: 1em;
 }
 
 .detail-pad{
@@ -207,11 +217,11 @@ a {
 }
 
 .right{
-    text-align: -webkit-right;
+    text-align: right;
 }
 
 .center{
-    text-align: -webkit-center;
+    text-align: center;
 }
 
 /* header.html */
@@ -274,7 +284,7 @@ a {
 
 /* greetings.html */
 .greeting {
-    padding-top: 3.125vw;
+    padding-top: 2.5vw;
 }
 
 .greeting .horiz {
@@ -289,7 +299,7 @@ a {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 26px;
     letter-spacing: 0.02em;
     width: 100%;
 }
@@ -303,7 +313,7 @@ a {
     letter-spacing: 0.02em;
     margin-left: auto;
     margin-right: auto;
-    max-width: 15em;
+    max-width: 20.5em;
     width: 100%;
 }
 
