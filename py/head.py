@@ -25,25 +25,5 @@ def _head():
             # TSE Banner
             with table().add(tr()).add(td(cls='padding')).add(table()).add(tr()).add(td(cls='center')):
                 img(cls='banner', src=BANNER_IMG, alt='TSE Banner')
-        # Socials
-        with tr().add(td()).add(table(cls='socials')).add(tr()).add(td(cls='social')):
-            # Facebook
-            with a(href=TSE_FB, target='_blank').add(table(cls='column columnLeft')).add(tr()).add(td()).add(table()).add(tr()):
-                with td():
-                    img(cls='icon', src=FB_IMG, alt='Facebook Logo')
-                with td():
-                    p('@TritonSE')
-            # Instagram
-            with a(href=TSE_IG, target='_blank').add(table(cls='column columnLeft')).add(tr()).add(td()).add(table()).add(tr()):
-                with td():
-                    img(cls='icon', src=IG_IMG, alt='Instagram Logo')
-                with td():
-                    p('@ucsd_tse')
-            # LinkedIn
-            with a(href=TSE_IN, target='_blank').add(table(cls='column columnRight')).add(tr()).add(td()).add(table()).add(tr()):
-                with td():
-                    img(cls='icon', src=IN_IMG, alt='LinkedIn Logo')
-                with td():
-                    p('Triton Software Engineering')
 
     return header
