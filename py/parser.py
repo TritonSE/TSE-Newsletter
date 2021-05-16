@@ -15,14 +15,18 @@ def parser():
     #removes new line characters and extra end spaces
     lines = process_lines(file_lines)
     sections = []
+    greetings = []
     section_count = -1
     #next expected section to parse is a title
     curr_section = CurrentSection.title
     for i in range(len(lines)):
         #determines number of leading spaces in the line
         line_spacing, line = spacing(lines[i])
+        #first two lines of the text file are the greetings lines.
+        if i == 0 or i == 1:
+            greetings.append(line)
         #if it was a new line update what we expect to parse next
-        if line == "":
+        elif line == "":
             curr_section = update_section(curr_section, section_count)
         #if the line had no leading spaces, it is the title of a new section
         elif line_spacing == 0:
@@ -55,7 +59,7 @@ def parser():
                     #adds description line to the content block
                     section_body[-1].body[-1].desc.append(process_desc_line(line))
     #generates the HTML file given all of the sections' content
-    generate(sections)
+    generate(sections, greetings[0], greetings[1])
 
 def process_lines(lines):
     """Removes newline character and extra spacing from the end of the lines"""
@@ -100,6 +104,8 @@ def is_image(line):
 
 def process_image(line):
     """Returns an Image object made up of a line that represents an image"""
+    if line[2] == "L":
+        return Image(line[4:], "failed to render", True)
     return Image(line[3:], "failed to render")
 
 parser()

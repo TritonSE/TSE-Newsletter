@@ -27,10 +27,12 @@ class Image:
     Attributes:
     1. url (string) - The url of the image to be displayed.
     2. alt (string) - Alternative text to be displayed if the image is not rendered.
+    3. is_logo (string) - Whether or not the image is a logo
     """
-    def __init__(self, url, alt):
+    def __init__(self, url, alt, is_logo=False):
         self.url = url
         self.alt = alt
+        self.is_logo = is_logo
         
 class Text:
     """

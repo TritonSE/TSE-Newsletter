@@ -1,7 +1,7 @@
 import dominate
 from dominate.tags import *
 
-def _greetings(greet_title, greet_sub = 'Here are some things to get excited about!'):
+def _greetings(greet_title, greet_sub):
     """This function generates a greetings section below the header using table elements and returns it as HTML. 
     The greetings consists of a title and subtitle separated by a horizontal line. The title is the first function argument,
     which will be printed as a heading 2. The subtitle is the second function argument, which will be printed as a heading 3.

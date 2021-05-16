@@ -85,7 +85,10 @@ def _bodylineleft(title, entries):
                     # If the entry is an Image, then the image is rendered or the alt is displayed.
                     elif isinstance(entry, Image):
                         with tr().add(td(cls=entry_class)):
-                            img(cls="img-left", src=entry.url, alt=entry.alt)
+                            if entry.is_logo:
+                                img(cls="img-left img-logo", src=entry.url, alt=entry.alt)
+                            else:
+                                img(cls="img-left", src=entry.url, alt=entry.alt)   
                     else:
                         raise TypeError("Elements of entries must either be Entry or Image object.")
     return bodylineleft

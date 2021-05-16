@@ -14,8 +14,9 @@ from entry_objects import *
 # USER VARIABLES
 # greetings
 greet_title = 'HAPPY WEEK * EVERYONE'
+greet_sub = 'Here are some things to get excited about!'
 
-def generate(sections):
+def generate(sections, greet_title=greet_title, greet_sub=greet_sub):
     # create a document titled 'TSE Newsletter'
     doc = dominate.document(title='TSE Newsletter')
 
@@ -30,7 +31,7 @@ def generate(sections):
             with tr().add(td()):
                 _head()
             with tr().add(td()):
-                _greetings(greet_title)
+                _greetings(greet_title, greet_sub)
             with tr().add(td(cls="first-section-padding")):
                 _bodylineleft(sections[0][0], sections[0][1])
             with tr().add(td(cls="section-padding")):
