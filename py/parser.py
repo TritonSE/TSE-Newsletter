@@ -16,6 +16,7 @@ def parser():
     lines = process_lines(file_lines)
     sections = []
     greetings = []
+    in_list = False
     section_count = -1
     #next expected section to parse is a title
     curr_section = CurrentSection.title
@@ -50,7 +51,14 @@ def parser():
                 section_body[-1].details.append(process_detail(line))
             #If parsing through the body section, add to the description or add image
             elif curr_section.value == 3:
-                if is_image(line):
+                if start_list(line):
+                    in_list = True
+                    section_body[-1].body[-1].desc.append(UnorderedList())
+                elif end_list(line):
+                    in_list = False
+                elif in_list:
+                    section_body[-1].body[-1].desc[-1].list_lines.append(line)
+                elif is_image(line):
                     #adds new image to the body
                     section_body[-1].body.append(process_image(line))
                     #adds a new content block to set up further lines of description that follow
@@ -107,5 +115,15 @@ def process_image(line):
     if line[2] == "L":
         return Image(line[4:], "failed to render", True)
     return Image(line[3:], "failed to render")
+
+def start_list(line):
+    if line[0:3] == "UL:":
+        return True
+    return False
+
+def end_list(line):
+    if line[0:4] == "EUL:":
+        return True
+    return False
 
 parser()
