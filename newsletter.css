@@ -104,8 +104,8 @@ a {
 .section-title {
     font-family: Roboto, sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 2em;
+    font-weight: 425;
+    font-size: 2.15em;
     letter-spacing: .02em;
     color: #FDF3DF;
     margin-top: 0em;
@@ -115,7 +115,7 @@ a {
 .title {
     font-family: Roboto, sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 450;
     font-size: 1.6em;
     letter-spacing: .02em;
     color: #FCF6E5;
@@ -126,8 +126,8 @@ a {
 .details {
     font-family: Roboto, sans-serif;
     font-style: normal;
-    font-weight: normal;
-    font-size: .8125em;
+    font-weight: 450;
+    font-size: .85em;
     letter-spacing: .02em;
     color: #D3D3D3;
     margin-top: 0em;
@@ -137,8 +137,8 @@ a {
 .description {
     font-family: Roboto, sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 1.0625em;
+    font-weight: 400;
+    font-size: 1.175em;
     letter-spacing: .02em;
     color: #ecebeb;
     margin-top: 0em;
@@ -168,9 +168,9 @@ a {
 }
 
 .img-center {
-    width: 75%;
-    margin-left: 12.5%;
-    margin-right: 12.5%;
+    width: 65%;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
 }
 
 .img-right {
@@ -178,6 +178,15 @@ a {
     margin-right: 0em;
     margin-left: auto;
     display: block;
+}
+
+.img-logo {
+    width: 12em;
+}
+
+ul{
+    padding-top: .6em;
+    padding-left: 2em;
 }
 
 .right-pad{
@@ -263,8 +272,8 @@ a {
     color: #FCF6E5;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 26px;
+    font-weight: 450;
+    font-size: 2.4em;
     letter-spacing: 0.02em;
     width: 100%;
 }
@@ -273,8 +282,8 @@ a {
     color: #FCF6E5;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 1.25em;
     letter-spacing: 0.02em;
     margin-left: auto;
     margin-right: auto;
@@ -284,7 +293,7 @@ a {
 
 /* footer.html */
 .footer {
-    padding-top: 0.5vw;
+    padding-top: 2.5vw;
 }
 
 .footer .horiz {
