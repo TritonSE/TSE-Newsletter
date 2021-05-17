@@ -16,7 +16,7 @@ class Content:
     """
     Represents a block of text within an entry's body and details.
     Attributes:
-    1. desc (list of Text, Link, and Linebreaks objects) - Each element in the list represents one aspect of the details/body.
+    1. desc (list of Text, Link, UnorderedList, and Linebreaks objects) - Each element in the list represents one aspect of the details/body.
     """
     def __init__(self, desc):
         self.desc = desc 
@@ -64,3 +64,13 @@ class Linebreak:
     """
     def __init__(self, numBreaks):
         self.numBreaks = numBreaks
+
+class UnorderedList:
+    """
+    Represents an unordered list within the body of an entry.
+    Only applicable to left-oriented entries.
+    Attributes:
+    1. listLines - A list of the lines in the unordered list.
+    """
+    def __init__(self, list_lines = []):
+        self.list_lines = list_lines
