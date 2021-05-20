@@ -70,10 +70,15 @@ def _bodylineleft(title, entries):
                                             if isinstance(line, Link):
                                                 with p(cls="description").add(u()):
                                                     a(line.text, cls="desc_link", href=line.url, target="_blank")
-                                            elif isinstance(line, UnorderedList):
-                                                with ul(cls="description"):
-                                                    for list_line in line.list_lines:
-                                                        li(list_line)
+                                            elif isinstance(line, LinesList):
+                                                if line.ordered:
+                                                    with ol(cls="description"):
+                                                        for list_line in line.list_lines:
+                                                            li(list_line)
+                                                else:
+                                                    with ul(cls="description"):
+                                                        for list_line in line.list_lines:
+                                                            li(list_line)
                                             elif isinstance(line, Linebreak):
                                                 for i in range(line.numBreaks):
                                                     br()

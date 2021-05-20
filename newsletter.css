@@ -189,6 +189,11 @@ ul{
     padding-left: 2em;
 }
 
+ol{
+    padding-top: .6em;
+    padding-left: 2em;
+}
+
 .right-pad{
     padding-right: 1.5625em;
 }
