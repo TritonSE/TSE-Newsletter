@@ -60,17 +60,19 @@ class Linebreak:
     Placed between Text and Image objects within a list for an entry's body to create 
     whitelines between bodies of text and images.
     Attributes:
-    1. numBreaks - The number of extra lines to be added.
+    1. numBreaks (integer) - The number of extra lines to be added.
     """
     def __init__(self, numBreaks):
         self.numBreaks = numBreaks
 
-class UnorderedList:
+class LinesList:
     """
-    Represents an unordered list within the body of an entry.
+    Represents an unordered/ordered list within the body of an entry.
     Only applicable to left-oriented entries.
     Attributes:
-    1. listLines - A list of the lines in the unordered list.
+    1. ordered (boolean) - Whether or not the list is ordered or unordered.
+    2. listLines (list of strings) - A list of the lines in the unordered/ordered list.
     """
-    def __init__(self, list_lines = []):
+    def __init__(self, ordered = False, list_lines = []):
+        self.ordered = ordered
         self.list_lines = list_lines
