@@ -69,6 +69,8 @@ def _bodylineright(title, entries):
                                                     br()
                                             elif isinstance(line, Text):
                                                 p(line.text, cls="description right")
+                                            elif isinstance(line, UnorderedList):
+                                                raise TypeError("UnorderedList can only be used for left-aligned entries")
                                             else:
                                                 raise TypeError("Elements of Content object must be either a Text, Link or Linebreak object.")
                                 elif isinstance(elem, Image):
