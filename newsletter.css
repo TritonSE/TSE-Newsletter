@@ -31,14 +31,14 @@ a {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
 .outer {
     margin: 0 auto;
     width: 100%;
-    max-width: 600px;
+    max-width: 960px;
     border-spacing: 0;
 
     background-image: url('https://drive.google.com/uc?export=view&id=1dQKwKeUTLuZFi64MaGJNrTLPuv_t4wY1');
@@ -309,7 +309,6 @@ ol{
 }
 
 .social {
-    font-size: 0;
     text-align: center;
 }
 
@@ -318,36 +317,34 @@ ol{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 1.25em;
     letter-spacing: 0.02em;
+    white-space: nowrap;
 
-    margin-left: 4px;
-
+    margin-left: 0.4em;
+    padding-bottom: 0.28em;
     width: 100%;
 }
 
 .social .lightbulb {
-    width: 5vw;
-    max-width: 43px;
-}
-
-.right {
-    margin-left: 15px;
+    width: 7.5vw;
+    max-width: 62px;
 }
 
 .social .icon {
-    width: 5vw;
-    max-width: 22px;
+    width: 4vw;
+    max-width: 28px;
+    padding-left: 2.2em;
 }
 
 .social .smColumn {
-    width: 10%;
+    width: 6.5%;
 }
 
 .social .mdColumn {
-    width: 21%;
+    width: 20%;
 }
 
 .social .lgColumn {
-    width: 38%;
+    width: 40%;
 }
