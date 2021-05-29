@@ -317,13 +317,13 @@ ol{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 1em;
+    font-size: 1.25em;
     letter-spacing: 0.02em;
+    white-space: nowrap;
 
-    margin-left: 0.2em;
-    padding-bottom: 0.5em;
-    padding-right: 0%;
-    margin-right: 0%;
+    margin-left: 0.4em;
+    padding-bottom: 0.28em;
+    width: 100%;
 }
 
 .social .lightbulb {
@@ -334,7 +334,7 @@ ol{
 .social .icon {
     width: 4vw;
     max-width: 28px;
-    padding-left: 1.3em;
+    padding-left: 2.2em;
 }
 
 .social .smColumn {
