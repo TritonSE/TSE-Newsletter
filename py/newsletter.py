@@ -16,7 +16,7 @@ from entry_objects import *
 greet_title = 'HAPPY WEEK * EVERYONE'
 greet_sub = 'Here are some things to get excited about!'
 
-def generate(greet_title=greet_title, greet_sub=greet_sub):
+def generate(sections, greet_title=greet_title, greet_sub=greet_sub):
     # create a document titled 'TSE Newsletter'
     doc = dominate.document(title='TSE Newsletter')
 
